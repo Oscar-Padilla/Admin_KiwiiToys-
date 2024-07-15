@@ -130,7 +130,7 @@ const eComDashboardStatData = [
   {
     id: '1',
     icon: <PiGiftDuotone className="h-6 w-6" />,
-    title: 'New Orders',
+    title: 'Nuevas Órdenes',
     metric: '1,390',
     increased: true,
     decreased: false,
@@ -142,7 +142,7 @@ const eComDashboardStatData = [
   {
     id: '2',
     icon: <PiChartPieSliceDuotone className="h-6 w-6" />,
-    title: 'Sales',
+    title: 'Ventas',
     metric: '$57,890',
     increased: false,
     decreased: true,
@@ -154,7 +154,7 @@ const eComDashboardStatData = [
   {
     id: '3',
     icon: <PiBankDuotone className="h-6 w-6" />,
-    title: 'Revenue',
+    title: 'Ganancias',
     metric: '$12,390',
     increased: true,
     decreased: false,
@@ -211,7 +211,7 @@ export default function StatCards({ className }: { className?: string }) {
             <Text as="span" className="me-1 hidden @[240px]:inline-flex">
               {stat.increased ? 'Increased' : 'Decreased'}
             </Text>{' '}
-            last month
+            último mes
           </Text>
         </MetricCard>
       ))}
