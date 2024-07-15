@@ -4,34 +4,31 @@ import Image from 'next/image';
 import UnderlineShape from '@components/shape/underline';
 import { metaObject } from '@/config/site.config';
 
+/*
 export const metadata = {
   ...metaObject('Sign In'),
 };
+*/
 
 export default function SignIn() {
   return (
     <AuthWrapperOne
       title={
         <>
-          Welcome back! Please{' '}
+          Hola! Por favor,{' '}
           <span className="relative inline-block">
-            Sign in to
+            inicia sesión para
             <UnderlineShape className="absolute -bottom-2 start-0 h-2.5 w-24 text-blue md:w-28 xl:-bottom-1.5 xl:w-36" />
           </span>{' '}
-          continue.
+          continuar.
         </>
       }
-      description="By signing up, you will gain access to exclusive content, special
-      offers, and be the first to hear about exciting news and updates."
-      bannerTitle="The simplest way to manage your workspace."
-      bannerDescription="Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-      amet sint velit officia consequat duis."
-      isSocialLoginActive={true}
+      description="Inicia sesión para que accedas al administrador de KiwiiToys."
       pageImage={
-        <div className="relative mx-auto aspect-[4/3.37] w-[500px] xl:w-[620px] 2xl:w-[820px]">
+        <div className="relative mx-auto aspect-[1/1] w-[250px] xl:w-[310px] 2xl:w-[410px]">
           <Image
             src={
-              'https://isomorphic-furyroad.s3.amazonaws.com/public/auth/sign-up.webp'
+              '/logo/kiwiilogo.png'
             }
             alt="Sign Up Thumbnail"
             fill

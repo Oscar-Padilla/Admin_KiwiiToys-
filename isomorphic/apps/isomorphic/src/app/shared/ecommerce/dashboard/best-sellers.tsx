@@ -26,7 +26,7 @@ export default function BestSellers({ className }: { className?: string }) {
 
   return (
     <WidgetCard
-      title={'Top Products'}
+      title={'Productos'}
       description={
         <>
           Overview:

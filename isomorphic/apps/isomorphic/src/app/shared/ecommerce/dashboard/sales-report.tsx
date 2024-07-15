@@ -21,7 +21,7 @@ import SimpleBar from '@ui/simplebar';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     revenue: 5000,
     expense: 1500,
   },
@@ -36,7 +36,7 @@ const data = [
     expense: 1300,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     revenue: 5780,
     expense: 3908,
   },
@@ -56,7 +56,7 @@ const data = [
     expense: 2500,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     revenue: 3780,
     expense: 3908,
   },
@@ -76,7 +76,7 @@ const data = [
     expense: 3908,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     revenue: 7500,
     expense: 3000,
   },
@@ -87,15 +87,15 @@ export default function SalesReport({ className }: { className?: string }) {
   const [startDate, setStartDate] = useState<Date>(new Date());
   return (
     <WidgetCard
-      title={'Sales Report'}
+      title={'Reporte de ventas'}
       description={
         <>
-          <Badge renderAsDot className="me-0.5 bg-[#282ECA]" /> Revenue
+          <Badge renderAsDot className="me-0.5 bg-[#282ECA]" /> Ganancias
           <Badge
             renderAsDot
             className="me-0.5 ms-4 bg-[#B8C3E9] dark:bg-[#7c88b2]"
           />{' '}
-          Expense
+          Gastos
         </>
       }
       descriptionClassName="text-gray-500 mt-1.5"
