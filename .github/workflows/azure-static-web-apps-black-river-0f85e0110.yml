@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      -name: pnpm install
+      - name: pnpm install
         run: |
           pnpm install
       - name: Build And Deploy
