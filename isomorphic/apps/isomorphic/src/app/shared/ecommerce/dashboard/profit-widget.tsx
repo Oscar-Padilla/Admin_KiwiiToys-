@@ -41,7 +41,7 @@ const data = [
   },
 ];
 
-const filterOptions = ['5 D', '2 W', '1 M', '6 M', '1 Y'];
+const filterOptions = ['5 D', '2 S', '1 M', '6 M', '1 A'];
 
 export default function ProfitWidget({ className }: { className?: string }) {
   function handleFilterBy(data: string) {
@@ -50,13 +50,13 @@ export default function ProfitWidget({ className }: { className?: string }) {
 
   return (
     <WidgetCard
-      title={'Total Profit'}
+      title={'Ganancias totales'}
       description={'$8,950.00'}
       titleClassName="text-gray-500 font-normal font-inter !text-sm"
       descriptionClassName="text-lg font-semibold sm:text-xl 3xl:text-2xl text-gray-900 font-lexend mt-1"
       action={
         <Button variant="outline" size="sm" className="text-sm">
-          Details
+          Detalles
         </Button>
       }
       headerClassName="mb-6"
@@ -104,7 +104,7 @@ export default function ProfitWidget({ className }: { className?: string }) {
           </ResponsiveContainer>
           <Text className="text-gray-500 @sm:mt-2.5 ">
             <PiInfoFill className="inline-flex h-auto w-4 text-gray-500/80 dark:text-gray-600" />{' '}
-            Total profit without tax included.
+            Ganancias totales sin IVA.
           </Text>
         </div>
       </div>

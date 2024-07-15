@@ -56,14 +56,14 @@ export const getColumns = ({
   onHeaderCellClick,
 }: Columns) => [
   {
-    title: <HeaderCell title="Order ID" />,
+    title: <HeaderCell title="ID" />,
     dataIndex: 'id',
     key: 'id',
     width: 120,
     render: (value: string) => <Text>#{value}</Text>,
   },
   {
-    title: <HeaderCell title="Customer" />,
+    title: <HeaderCell title="Cliente" />,
     dataIndex: 'customer',
     key: 'customer',
     width: 300,
@@ -76,7 +76,7 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Items" />,
+    title: <HeaderCell title="Producto" />,
     dataIndex: 'items',
     key: 'items',
     width: 150,
@@ -87,7 +87,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Price"
+        title="Precio"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'price'
@@ -105,7 +105,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Created"
+        title="Creado"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'createdAt'
@@ -121,7 +121,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Modified"
+        title="Modificado"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'updatedAt'
@@ -143,7 +143,7 @@ export const getColumns = ({
   },
   {
     // Need to avoid this issue -> <td> elements in a large <table> do not have table headers.
-    title: <HeaderCell title="Actions" className="opacity-0" />,
+    title: <HeaderCell title="Acciones" className="opacity-0" />,
     dataIndex: 'action',
     key: 'action',
     width: 130,
@@ -151,7 +151,7 @@ export const getColumns = ({
       <div className="flex items-center justify-end gap-3 pe-4">
         <Tooltip
           size="sm"
-          content={'Edit Order'}
+          content={'Editar Órden'}
           placement="top"
           color="invert"
         >
@@ -168,7 +168,7 @@ export const getColumns = ({
         </Tooltip>
         <Tooltip
           size="sm"
-          content={'View Order'}
+          content={'Ver Órden'}
           placement="top"
           color="invert"
         >
@@ -184,8 +184,8 @@ export const getColumns = ({
           </Link>
         </Tooltip>
         <DeletePopover
-          title={`Delete the order`}
-          description={`Are you sure you want to delete this #${row.id} order?`}
+          title={`Eliminar Órden`}
+          description={`Estás seguro que quieres eliminar la órden #${row.id}?`}
           onDelete={() => onDeleteItem(row.id)}
         />
       </div>

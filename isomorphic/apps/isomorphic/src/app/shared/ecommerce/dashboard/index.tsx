@@ -23,12 +23,12 @@ export default function EcommerceDashboard() {
         <WelcomeBanner
           title={
             <>
-              Good Morning, <br /> Cameron{' '}
+              Hola, <br /> Administrador{' '}
               <HandWaveIcon className="inline-flex h-8 w-8" />
             </>
           }
           description={
-            'Here’s What happening on your store today. See the statistics at once.'
+            'Estas son las estadísticas de la tienda.'
           }
           media={
             <div className="absolute -bottom-6 end-4 hidden w-[300px] @2xl:block lg:w-[320px] 2xl:-bottom-7 2xl:w-[330px]">
@@ -46,7 +46,7 @@ export default function EcommerceDashboard() {
         >
           <Link href={routes.eCommerce.createProduct} className="inline-flex">
             <Button as="span" className="h-[38px] shadow md:h-10">
-              <PiPlusBold className="me-1 h-4 w-4" /> Add Product
+              <PiPlusBold className="me-1 h-4 w-4" /> Agregar producto
             </Button>
           </Link>
         </WelcomeBanner>
@@ -55,8 +55,6 @@ export default function EcommerceDashboard() {
         <ProfitWidget className="h-[464px] @sm:h-[520px] @7xl:col-span-4 @7xl:col-start-9 @7xl:row-start-1 @7xl:row-end-3 @7xl:h-full" />
 
         <SalesReport className="@4xl:col-span-2 @7xl:col-span-8" />
-
-        <PromotionalSales className="@4xl:col-start-2 @4xl:row-start-3 @7xl:col-span-4 @7xl:col-start-auto @7xl:row-start-auto" />
 
         <RecentOrder className="relative @4xl:col-span-2 @7xl:col-span-12" />
 

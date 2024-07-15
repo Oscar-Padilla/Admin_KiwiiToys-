@@ -5,14 +5,14 @@ import BasicTableWidget from '@/app/shared/controlled-table/basic-table-widget';
 export default function RecentOrder({ className }: { className?: string }) {
   return (
     <BasicTableWidget
-      title={'Recent Order'}
+      title={'Órdenes recientes'}
       data={orderData}
       // @ts-ignore
       getColumns={getWidgetColumns}
       className={className}
       enablePagination
       noGutter
-      searchPlaceholder="Search order..."
+      searchPlaceholder="Buscar órden..."
       variant="modern"
     />
   );
