@@ -37,7 +37,7 @@ export default function TablePagination({
         )
       ) : (
         <div className="hidden items-center sm:flex">
-          Rows per page:{' '}
+         Filas por página:{' '}
           <Select
             options={paginationLimitOptions}
             onChange={setPageSize}

@@ -42,22 +42,9 @@ export default function FilterElement({
         value={filters['price']}
         onChange={(data) => updateFilter('price', data)}
       />
-      <DateFiled
-        selected={getDateRangeStateValues(filters['createdAt'][0])}
-        startDate={getDateRangeStateValues(filters['createdAt'][0])}
-        endDate={getDateRangeStateValues(filters['createdAt'][1])}
-        onChange={(date: any) => {
-          updateFilter('createdAt', date);
-        }}
-        className="w-full"
-        placeholderText="Select created date"
-        inputProps={{
-          label: 'Created Date',
-          labelClassName: 'font-medium text-gray-700',
-        }}
-      />
+      
       <StatusField
-        label="Status"
+        label="Estado"
         options={statusOptions}
         value={filters['status']}
         onChange={(value: string) => {
@@ -78,7 +65,7 @@ export default function FilterElement({
           className="h-8 bg-gray-200/70"
           variant="flat"
         >
-          <PiTrashDuotone className="me-1.5 h-[17px] w-[17px]" /> Clear
+          <PiTrashDuotone className="me-1.5 h-[17px] w-[17px]" /> Borrar Filtros
         </Button>
       ) : null}
     </>

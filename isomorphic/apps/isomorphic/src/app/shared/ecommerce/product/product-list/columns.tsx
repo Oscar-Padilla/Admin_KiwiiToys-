@@ -53,10 +53,10 @@ function getStockStatus(status: number) {
         <Progressbar
           value={status}
           color="danger"
-          label={'out of stock'}
+          label={'Fuera de Stock'}
           className="h-1.5 w-24 bg-red/20"
         />
-        <Text className="pt-1.5 text-[13px] text-gray-500">out of stock </Text>
+        <Text className="pt-1.5 text-[13px] text-gray-500">Fuera de stock </Text>
       </>
     );
   } else if (status <= 20) {
@@ -65,11 +65,11 @@ function getStockStatus(status: number) {
         <Progressbar
           value={status}
           color="warning"
-          label={'low stock'}
+          label={'Stock bajo'}
           className="h-1.5 w-24 bg-orange/20"
         />
         <Text className="pt-1.5 text-[13px] text-gray-500">
-          {status} low stock
+          {status} Stock bajo
         </Text>
       </>
     );
@@ -79,11 +79,11 @@ function getStockStatus(status: number) {
         <Progressbar
           value={status}
           color="success"
-          label={'stock available'}
+          label={'stock disponible'}
           className="h-1.5 w-24 bg-green/20"
         />
         <Text className="pt-1.5 text-[13px] text-gray-500">
-          {status} in stock
+          {status} En stock
         </Text>
       </>
     );
@@ -154,7 +154,7 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Product" />,
+    title: <HeaderCell title="Producto" />,
     dataIndex: 'product',
     key: 'product',
     width: 300,
@@ -197,7 +197,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Price"
+        title="Precio"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'price'
@@ -213,14 +213,14 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Rating" />,
+    title: <HeaderCell title="Valoración" />,
     dataIndex: 'rating',
     key: 'rating',
     width: 200,
     render: (rating: number[]) => getRating(rating),
   },
   {
-    title: <HeaderCell title="Status" />,
+    title: <HeaderCell title="Estado" />,
     dataIndex: 'status',
     key: 'status',
     width: 120,
@@ -236,31 +236,20 @@ export const getColumns = ({
       <div className="flex items-center justify-end gap-3 pe-4">
         <Tooltip
           size="sm"
-          content={'Edit Product'}
+          content={'Editar Producto'}
           placement="top"
           color="invert"
         >
           <Link href={routes.eCommerce.ediProduct(row.id)}>
-            <ActionIcon size="sm" variant="outline" aria-label={'Edit Product'}>
+            <ActionIcon size="sm" variant="outline" aria-label={'Editar Producto'}>
               <PencilIcon className="h-4 w-4" />
             </ActionIcon>
           </Link>
         </Tooltip>
-        <Tooltip
-          size="sm"
-          content={'View Product'}
-          placement="top"
-          color="invert"
-        >
-          <Link href={routes.eCommerce.productDetails(row.id)}>
-            <ActionIcon size="sm" variant="outline" aria-label={'View Product'}>
-              <EyeIcon className="h-4 w-4" />
-            </ActionIcon>
-          </Link>
-        </Tooltip>
+       
         <DeletePopover
-          title={`Delete the product`}
-          description={`Are you sure you want to delete this #${row.id} product?`}
+          title={`Borrar Producto`}
+          description={`Estas seguro de querer borrar este producto?`}
           onDelete={() => onDeleteItem(row.id)}
         />
       </div>

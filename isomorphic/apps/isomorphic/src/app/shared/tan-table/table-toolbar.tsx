@@ -104,7 +104,7 @@ export default function TableToolbar<TData extends Record<string, any>>({
             <Popover.Trigger>
               <ActionIcon
                 variant="outline"
-                title={'Toggle Columns'}
+                title={'Por Columnas'}
                 className="h-auto w-auto p-1"
               >
                 <PiTextColumns strokeWidth={3} className="size-6" />

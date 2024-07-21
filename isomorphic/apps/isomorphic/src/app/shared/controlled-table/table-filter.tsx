@@ -54,7 +54,7 @@ export function FilterDrawerView({
           onClick={() => setOpenDrawer(false)}
           className="mt-5 h-11 w-full text-sm"
         >
-          Show Results
+          Mostrar Resultados
         </Button>
       </div>
     </Drawer>
@@ -85,7 +85,7 @@ export default function TableFilter({
   checkedColumns,
   setCheckedColumns,
   hideIndex,
-  drawerTitle = 'Table Filters',
+  drawerTitle = 'Filtros',
   hasSearched,
   enableDrawerFilter = false,
   showSearchOnTheRight = false,
@@ -102,7 +102,7 @@ export default function TableFilter({
         {!showSearchOnTheRight ? (
           <Input
             type="search"
-            placeholder="Search by anything..."
+            placeholder="Buscar..."
             value={searchTerm}
             onClear={onSearchClear}
             onChange={onSearchChange}
@@ -168,8 +168,8 @@ export default function TableFilter({
           >
             <PiFunnel className="me-1.5 h-[18px] w-[18px]" strokeWidth={1.7} />
             {!(isMediumScreen || enableDrawerFilter) && showFilters
-              ? 'Hide Filters'
-              : 'Filters'}
+              ? 'Ocultar Filtros'
+              : 'Filtros'}
           </Button>
         ) : null}
 

@@ -199,7 +199,7 @@ export function ToggleColumns<T>({
         <Popover.Content className="z-0">
           <div className="px-0.5 pt-2 text-left rtl:text-right">
             <Title as="h6" className="mb-1 px-0.5 text-sm font-semibold">
-              Toggle Columns
+              Por columnas
             </Title>
             <CheckboxGroup
               values={checkedColumns}

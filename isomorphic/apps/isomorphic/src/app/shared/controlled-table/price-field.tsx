@@ -10,7 +10,7 @@ type PriceFieldTypes = {
 };
 
 export default function PriceField({
-  label = 'Amount',
+  label = 'Monto',
   value,
   onChange,
 }: PriceFieldTypes) {

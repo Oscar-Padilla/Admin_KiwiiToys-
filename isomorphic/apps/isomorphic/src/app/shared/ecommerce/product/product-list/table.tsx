@@ -17,7 +17,6 @@ const TableFooter = dynamic(() => import('@/app/shared/table-footer'), {
 
 const filterState = {
   price: ['', ''],
-  createdAt: [null, null],
   status: '',
 };
 
