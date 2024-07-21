@@ -75,10 +75,6 @@ export const menuItems = [
         badge: '',
       },
       {
-        name: 'Detalles de productos',
-        href: routes.eCommerce.productDetails(DUMMY_ID),
-      },
-      {
         name: 'Agregar producto',
         href: routes.eCommerce.createProduct,
       },
