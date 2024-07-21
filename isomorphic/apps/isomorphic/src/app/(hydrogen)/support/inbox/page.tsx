@@ -7,22 +7,22 @@ import SupportInbox from '@/app/shared/support/inbox';
 import { metaObject } from '@/config/site.config';
 
 export const metadata = {
-  ...metaObject('Support Inbox'),
+  ...metaObject('Bandeja de entrada de soporte'),
 };
 
 const pageHeader = {
-  title: 'Support Inbox',
+  title: 'Bandeja de entrada de soporte',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       href: routes.support.dashboard,
-      name: 'Support',
+      name: 'Soporte',
     },
     {
-      name: 'Inbox',
+      name: 'Bandeja de entrada',
     },
   ],
 };

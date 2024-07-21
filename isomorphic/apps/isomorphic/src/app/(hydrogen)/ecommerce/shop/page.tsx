@@ -12,23 +12,23 @@ const ShopFilters = dynamic(
 );
 
 const pageHeader = {
-  title: 'Shop',
+  title: 'Tienda',
   breadcrumb: [
     {
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       href: routes.eCommerce.dashboard,
       name: 'E-Commerce',
     },
     {
-      name: 'Shop',
+      name: 'Tienda',
     },
   ],
 };
 
 export const metadata = {
-  ...metaObject('Shop'),
+  ...metaObject('Tienda'),
 };
 
 export default function ShopPage() {

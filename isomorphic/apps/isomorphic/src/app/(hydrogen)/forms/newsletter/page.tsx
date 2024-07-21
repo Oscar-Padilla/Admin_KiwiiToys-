@@ -11,18 +11,18 @@ import { routes } from '@/config/routes';
 import { metaObject } from '@/config/site.config';
 
 export const metadata = {
-  ...metaObject('Newsletter'),
+  ...metaObject('Boletin informativo'),
 };
 
 const pageHeader = {
-  title: 'Newsletter',
+  title: 'Boletin informativo',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
-      name: 'Home',
+      name: 'Inicio',
     },
     {
-      name: 'Newsletter',
+      name: 'Boletin informativo',
     },
   ],
 };

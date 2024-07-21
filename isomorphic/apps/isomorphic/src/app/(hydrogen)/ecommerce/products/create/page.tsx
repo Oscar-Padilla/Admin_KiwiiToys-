@@ -19,10 +19,10 @@ const pageHeader = {
     },
     {
       href: routes.eCommerce.products,
-      name: 'Products',
+      name: 'Productos',
     },
     {
-      name: 'Create',
+      name: 'Crear',
     },
   ],
 };

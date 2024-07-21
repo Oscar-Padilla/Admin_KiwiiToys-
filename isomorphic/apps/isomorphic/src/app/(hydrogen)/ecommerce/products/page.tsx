@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const pageHeader = {
-  title: 'Products',
+  title: 'Productos',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
@@ -21,10 +21,10 @@ const pageHeader = {
     },
     {
       href: routes.eCommerce.products,
-      name: 'Products',
+      name: 'Productos',
     },
     {
-      name: 'List',
+      name: 'Lista',
     },
   ],
 };
