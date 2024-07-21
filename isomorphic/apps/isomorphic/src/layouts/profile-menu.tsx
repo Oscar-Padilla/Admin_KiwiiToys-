@@ -27,7 +27,7 @@ export default function ProfileMenu({
           )}
         >
           <Avatar
-            src="https://isomorphic-furyroad.s3.amazonaws.com/public/avatars/avatar-11.webp"
+            src="https://www.ecuavisa.com/binrepository/953x600/189c0/600d600/none/11705/OAVV/karely-ruiz-lanza-concurso-de-dinero_1435557_20240321101407.jpg"
             name="Alma Marcela Gozo"
             className={cn('!h-9 w-9 sm:!h-10 sm:!w-10', avatarClassName)}
           />
