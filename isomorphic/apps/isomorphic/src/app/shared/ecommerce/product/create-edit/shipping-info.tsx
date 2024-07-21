@@ -47,8 +47,8 @@ export default function ShippingInfo({ className }: { className?: string }) {
       />
 
       <Input
-        label="Shipping Price"
-        placeholder="150.00"
+        label="Precio de envío"
+        placeholder="200"
         {...register('shippingPrice')}
         error={errors.shippingPrice?.message as string}
         prefix={'$'}
@@ -59,7 +59,7 @@ export default function ShippingInfo({ className }: { className?: string }) {
         control={control}
         render={({ field: { value, onChange } }) => (
           <Switch
-            label="Location Based Shipping"
+            label="Envío basado en la ubicación"
             className="col-span-full"
             value={value}
             checked={value}
@@ -71,14 +71,14 @@ export default function ShippingInfo({ className }: { className?: string }) {
       {fields.map((item, index) => (
         <div key={item.id} className="col-span-full flex gap-4 xl:gap-7">
           <Input
-            label="Location Name"
-            placeholder="location name"
+            label="Nombre del lugar"
+            placeholder="Nombre del lugar"
             className="flex-grow"
             {...register(`locationShipping.${index}.name`)}
           />
           <Input
-            label="Shipping Charge"
-            placeholder="150.00"
+            label="Costo de envío"
+            placeholder="200"
             className="flex-grow"
             {...register(`locationShipping.${index}.value`)}
           />

@@ -49,6 +49,7 @@ export default function ProductSummary({ className }: { className?: string }) {
         control={control}
         render={({ field: { onChange, value } }) => (
           <Select
+            placeholder='Seleccionar'
             dropdownClassName="!z-0"
             options={typeOption}
             value={value}
@@ -65,6 +66,7 @@ export default function ProductSummary({ className }: { className?: string }) {
         control={control}
         render={({ field: { onChange, value } }) => (
           <Select
+            placeholder='Seleccionar'
             options={categoryOption}
             value={value}
             onChange={onChange}

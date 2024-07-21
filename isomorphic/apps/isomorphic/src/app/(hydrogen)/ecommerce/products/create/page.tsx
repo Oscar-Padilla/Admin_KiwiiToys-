@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const pageHeader = {
-  title: 'Create Product',
+  title: 'Agregar Producto',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
@@ -22,7 +22,7 @@ const pageHeader = {
       name: 'Productos',
     },
     {
-      name: 'Crear',
+      name: 'Agregar',
     },
   ],
 };
@@ -37,7 +37,7 @@ export default function CreateProductPage() {
         >
           <Button as="span" className="w-full @lg:w-auto">
             <PiPlusBold className="me-1.5 h-[17px] w-[17px]" />
-            Add Product
+            Agregar Producto
           </Button>
         </Link>
       </PageHeader>

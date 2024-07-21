@@ -15,7 +15,7 @@ export default function ProductTags({ className }: { className?: string }) {
       description="Añade aquí la etiqueta o categoría de tu producto"
       className={cn(className)}
     >
-      <ItemCrud name="Tag" items={tags} setItems={setTags} />
+      <ItemCrud name="Etiqueta" items={tags} setItems={setTags} />
     </FormGroup>
   );
 }
@@ -50,7 +50,7 @@ function ItemCrud({ name, items, setItems }: ItemCrudProps): JSX.Element {
       <div className="flex items-center">
         <Input
           value={itemText}
-          placeholder={`Enter a ${name}`}
+          placeholder={`Añade a ${name}`}
           onChange={(e) => setItemText(e.target.value)}
           prefix={<PiTagBold className="h-4 w-4" />}
           className="w-full"
@@ -60,7 +60,7 @@ function ItemCrud({ name, items, setItems }: ItemCrudProps): JSX.Element {
           onClick={handleItemAdd}
           className="ms-4 shrink-0 text-sm @lg:ms-5"
         >
-          Add {name}
+          Añade una {name}
         </Button>
       </div>
 

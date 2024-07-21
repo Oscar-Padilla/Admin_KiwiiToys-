@@ -98,7 +98,7 @@ export default function CreateEditProduct({
 
           <FormFooter
             isLoading={isLoading}
-            submitBtnText={slug ? 'Update Product' : 'Create Product'}
+            submitBtnText={slug ? 'Editar Producto' : 'Agregar Producto'}
           />
         </form>
       </FormProvider>

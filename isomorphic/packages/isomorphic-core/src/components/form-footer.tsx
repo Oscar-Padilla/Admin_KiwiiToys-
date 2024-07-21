@@ -13,7 +13,7 @@ export const negMargin = '-mx-4 md:-mx-5 lg:-mx-6 3xl:-mx-8 4xl:-mx-10';
 
 export default function FormFooter({
   isLoading,
-  altBtnText = 'Save as Draft',
+  altBtnText = 'Guardar como borrador',
   submitBtnText = 'Submit',
   className,
   handleAltBtn,

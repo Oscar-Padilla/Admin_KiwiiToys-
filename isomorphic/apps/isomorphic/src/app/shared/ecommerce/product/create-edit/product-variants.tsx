@@ -51,7 +51,7 @@ export default function ProductVariants({ className }: { className?: string }) {
                 options={variantOption}
                 value={value}
                 onChange={onChange}
-                label="Variant Name"
+                label="Nombre Variante"
                 className="w-full @2xl:w-auto @2xl:flex-grow"
                 getOptionValue={(option) => option.value}
               />
@@ -81,7 +81,7 @@ export default function ProductVariants({ className }: { className?: string }) {
         variant="outline"
         className="col-span-full ml-auto w-auto"
       >
-        <PiPlusBold className="me-2 h-4 w-4" /> Add Variant
+        <PiPlusBold className="me-2 h-4 w-4" /> Agregar Variante
       </Button>
     </FormGroup>
   );
