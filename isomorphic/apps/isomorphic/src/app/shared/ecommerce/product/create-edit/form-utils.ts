@@ -77,7 +77,7 @@ export const productData = {
   productImages: undefined,
   inventoryTracking: 'no',
   currentStock: '150',
-  lowStock: '20',
+  lowStock: '2',
   productAvailability: 'online',
   tradeNumber: '12345',
   manufacturerNumber: '154',
