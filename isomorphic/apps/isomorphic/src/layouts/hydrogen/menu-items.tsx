@@ -118,18 +118,6 @@ export const menuItems = [
         name: 'Reviews',
         href: routes.eCommerce.reviews,
       },
-      {
-        name: 'Tienda',
-        href: routes.eCommerce.shop,
-      },
-      {
-        name: 'Carrito',
-        href: routes.eCommerce.cart,
-      },
-      {
-        name: 'Checkout y pago',
-        href: routes.eCommerce.checkout,
-      },
     ],
   },
   {
