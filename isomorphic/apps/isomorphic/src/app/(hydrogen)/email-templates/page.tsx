@@ -13,7 +13,7 @@ const pageHeader = {
   breadcrumb: [
     {
       href: '/',
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       name: 'Email Templates',

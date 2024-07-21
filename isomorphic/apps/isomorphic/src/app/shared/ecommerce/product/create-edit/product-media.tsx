@@ -12,8 +12,8 @@ export default function ProductMedia({ className }: ProductMediaProps) {
 
   return (
     <FormGroup
-      title="Upload new product images"
-      description="Upload your product image gallery here"
+      title="Subir nuevas imágenes de productos"
+      description="Sube la galería de imágenes de tu producto aquí"
       className={cn(className)}
     >
       <UploadZone

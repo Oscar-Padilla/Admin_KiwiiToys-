@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ProductDetailsPage({ params }: any) {
   const pageHeader = {
-    title: 'Shop',
+    title: 'Tienda',
     breadcrumb: [
       {
         href: routes.eCommerce.dashboard,
@@ -17,7 +17,7 @@ export default function ProductDetailsPage({ params }: any) {
       },
       {
         href: routes.eCommerce.shop,
-        name: 'Shop',
+        name: 'Tienda',
       },
       {
         name: params.slug,

@@ -8,19 +8,19 @@ import { eventData } from '@/data/event-data';
 import EventForm from '@/app/shared/event-calendar/event-form';
 
 export const metadata = {
-  ...metaObject('Event Calendar'),
+  ...metaObject('Calendario de eventos'),
 };
 
 const pageHeader = {
-  title: 'Event Calendar',
+  title: 'Calendario de eventos',
   breadcrumb: [
     {
       href: routes.file.dashboard,
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       href: routes.eventCalendar,
-      name: 'Event Calendar',
+      name: 'Calendario de eventos',
     },
   ],
 };

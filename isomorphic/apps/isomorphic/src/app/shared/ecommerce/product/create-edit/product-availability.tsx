@@ -5,16 +5,13 @@ import { PiCheckCircleFill } from 'react-icons/pi';
 const availability = [
   {
     value: 'online',
-    name: 'Only available online.',
+    name: 'Sólo disponible en línea.',
   },
   {
     value: 'coming-soon',
-    name: 'Coming soon',
+    name: 'Muy pronto',
   },
-  {
-    value: 'offline',
-    name: 'Only available offline.',
-  },
+ 
 ];
 
 export default function ProductAvailability() {

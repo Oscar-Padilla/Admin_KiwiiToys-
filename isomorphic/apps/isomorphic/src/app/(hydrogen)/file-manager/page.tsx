@@ -10,22 +10,22 @@ const FileUpload = dynamic(() => import('@/app/shared/file-upload'), {
 });
 
 export const metadata = {
-  ...metaObject('File Manager'),
+  ...metaObject('Administrador de archivos'),
 };
 
 const pageHeader = {
-  title: 'File Manager',
+  title: 'Administrador de archivos',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       href: routes.file.dashboard,
-      name: 'File Manager',
+      name: 'Administrador de archivos',
     },
     {
-      name: 'List',
+      name: 'Lista',
     },
   ],
 };

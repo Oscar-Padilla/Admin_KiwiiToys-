@@ -36,8 +36,8 @@ export default function ProductVariants({ className }: { className?: string }) {
 
   return (
     <FormGroup
-      title="Variant Options"
-      description="Add your product variants here"
+      title="Opciones variantes"
+      description="Agregue las variantes de sus productos aquí"
       className={cn(className)}
     >
       {fields.map((item, index) => (
@@ -59,7 +59,7 @@ export default function ProductVariants({ className }: { className?: string }) {
           />
           <Input
             type="number"
-            label="Variant Value"
+            label="Valor variante"
             placeholder="150.00"
             className="flex-grow"
             prefix={'$'}

@@ -4,15 +4,15 @@ import { Radio, RadioGroup, Input } from 'rizzui';
 const options = [
   {
     value: 'yes',
-    label: 'Track inventory for this product',
+    label: 'Inventario de estantes para este producto',
   },
   {
     value: 'no',
-    label: 'Do not track inventory for this product',
+    label: 'No realizar seguimiento del inventario de este producto.',
   },
   {
     value: 'by-options',
-    label: 'Track inventory by options',
+    label: 'Inventario de estantes por opciones',
   },
 ];
 
@@ -48,14 +48,14 @@ export default function InventoryTracing() {
 
       <Input
         type="number"
-        label="Current Stock Level"
+        label="Nivel de existencias actual"
         placeholder="150"
         {...register('currentStock')}
         error={errors.currentStock?.message as string}
       />
       <Input
         type="number"
-        label="Low Stock Level"
+        label="Bajo nivel de existencias"
         placeholder="20"
         {...register('lowStock')}
         error={errors.lowStock?.message as string}

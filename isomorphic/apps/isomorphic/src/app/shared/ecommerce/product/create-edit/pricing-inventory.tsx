@@ -12,22 +12,22 @@ export default function PricingInventory({ className }: PricingInventoryProps) {
   return (
     <>
       <FormGroup
-        title="Pricing"
-        description="Add your product pricing here"
+        title="Precios"
+        description="Agregue el precio de su producto aquí"
         className={cn(className)}
       >
         <ProductPricing />
       </FormGroup>
       <FormGroup
-        title="Inventory Tracking"
-        description="Add your product inventory info here"
+        title="Seguimiento de inventario"
+        description="Agregue la información de su inventario de productos aquí"
         className={cn(className)}
       >
         <InventoryTracing />
       </FormGroup>
       <FormGroup
-        title="Availability"
-        description="Add your product inventory info here"
+        title="Disponibilidad"
+        description="Agregue la información de su inventario de productos aquí"
         className={cn(className)}
       >
         <ProductAvailability />
