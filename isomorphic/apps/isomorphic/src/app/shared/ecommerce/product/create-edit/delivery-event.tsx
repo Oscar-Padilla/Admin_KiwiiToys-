@@ -12,8 +12,8 @@ export default function DeliveryEvent({ className }: { className?: string }) {
   } = useFormContext();
   return (
     <FormGroup
-      title="Delivery / Event Date"
-      description="Add delivery or vent Date here"
+      title="Fecha de entrega/ Evento"
+      description="Agregue la fecha de entrega o fecha de evento aquí"
       className={cn(className)}
     >
       <Controller
@@ -24,14 +24,14 @@ export default function DeliveryEvent({ className }: { className?: string }) {
             value={value}
             checked={value}
             onChange={onChange}
-            label="Yes, customers must specify a date to purchase this product"
+            label="Sí, los clientes deben especificar una fecha para comprar este producto."
             className="col-span-full"
           />
         )}
       />
       <Input
-        label="Date Field Name"
-        placeholder="Date Field Name"
+        label="Nombre del campo de fecha"
+        placeholder="Nombre del campo de fecha"
         className="col-span-full"
         {...register('dateFieldName')}
         error={errors.dateFieldName?.message as string}
@@ -44,7 +44,7 @@ export default function DeliveryEvent({ className }: { className?: string }) {
             value={value}
             checked={value}
             onChange={onChange}
-            label="I want to limit the date range"
+            label="Quiero limitar el rango de fechas."
             className="col-span-full"
           />
         )}
@@ -54,8 +54,8 @@ export default function DeliveryEvent({ className }: { className?: string }) {
         control={control}
         render={({ field: { value, onChange, onBlur } }) => (
           <DatePicker
-            inputProps={{ label: 'Available date' }}
-            placeholderText="Select Date"
+            inputProps={{ label: 'Fecha disponible' }}
+            placeholderText="Seleccione fecha"
             dateFormat="dd/MM/yyyy"
             onChange={onChange}
             onBlur={onBlur}
@@ -68,8 +68,8 @@ export default function DeliveryEvent({ className }: { className?: string }) {
         control={control}
         render={({ field: { value, onChange, onBlur } }) => (
           <DatePicker
-            inputProps={{ label: 'End date' }}
-            placeholderText="Select Date"
+            inputProps={{ label: 'Fecha final' }}
+            placeholderText="Seleccione fecha"
             dateFormat="dd/MM/yyyy"
             onChange={onChange}
             onBlur={onBlur}

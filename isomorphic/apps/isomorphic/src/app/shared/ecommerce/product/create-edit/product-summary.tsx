@@ -27,25 +27,25 @@ export default function ProductSummary({ className }: { className?: string }) {
 
   return (
     <FormGroup
-      title="Summary"
-      description="Edit your product description and necessary information from here"
+      title="Resumen"
+      description="Edite la descripción de su producto y la información necesaria desde aquí"
       className={cn(className)}
     >
       <Input
-        label="Title"
-        placeholder="Product title"
+        label="Título"
+        placeholder="Título de producto"
         {...register('title')}
         error={errors.title?.message as string}
       />
       <Input
         label="SKU"
-        placeholder="Product sku"
+        placeholder="Sku del Producto"
         {...register('sku')}
         error={errors.sku?.message as string}
       />
 
       <Controller
-        name="type"
+        name="Tipo"
         control={control}
         render={({ field: { onChange, value } }) => (
           <Select
@@ -53,7 +53,7 @@ export default function ProductSummary({ className }: { className?: string }) {
             options={typeOption}
             value={value}
             onChange={onChange}
-            label="Product Type"
+            label="Tipo de Producto"
             error={errors?.type?.message as string}
             getOptionValue={(option) => option.value}
           />
@@ -61,14 +61,14 @@ export default function ProductSummary({ className }: { className?: string }) {
       />
 
       <Controller
-        name="categories"
+        name="Categorias"
         control={control}
         render={({ field: { onChange, value } }) => (
           <Select
             options={categoryOption}
             value={value}
             onChange={onChange}
-            label="Categories"
+            label="Categorias"
             error={errors?.categories?.message as string}
             getOptionValue={(option) => option.value}
             inPortal={false}
@@ -78,12 +78,12 @@ export default function ProductSummary({ className }: { className?: string }) {
 
       <Controller
         control={control}
-        name="description"
+        name="Descripción"
         render={({ field: { onChange, value } }) => (
           <QuillEditor
             value={value}
             onChange={onChange}
-            label="Description"
+            label="Descripción"
             className="col-span-full [&_.ql-editor]:min-h-[100px]"
             labelClassName="font-medium text-gray-700 dark:text-gray-600 mb-1.5"
           />

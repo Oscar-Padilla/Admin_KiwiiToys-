@@ -16,23 +16,23 @@ export const formParts = {
 
 export const menuItems = [
   {
-    label: 'Summary',
+    label: 'Resumen',
     value: formParts.summary,
   },
   {
-    label: 'Images & Gallery',
+    label: 'Imagenes y Galeria',
     value: formParts.media,
   },
   {
-    label: 'Pricing & Inventory',
+    label: 'Precios e inventario',
     value: formParts.pricingInventory,
   },
   {
-    label: 'Product Identifiers & Custom Fields',
+    label: 'Identificadores de productos y campos personalizados',
     value: formParts.productIdentifiers,
   },
   {
-    label: 'Shipping',
+    label: 'Envío',
     value: formParts.shipping,
   },
   {
@@ -40,7 +40,7 @@ export const menuItems = [
     value: formParts.seo,
   },
   {
-    label: 'Variant Options',
+    label: 'Opciones variantes',
     value: formParts.variantOptions,
   },
 ];

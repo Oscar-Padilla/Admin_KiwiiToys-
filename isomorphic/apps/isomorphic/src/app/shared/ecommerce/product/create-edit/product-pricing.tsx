@@ -10,7 +10,7 @@ export default function ProductPricing() {
   return (
     <>
       <Input
-        label="Price"
+        label="Precio"
         placeholder="10"
         {...register('price')}
         error={errors.price?.message as string}
@@ -18,7 +18,7 @@ export default function ProductPricing() {
         type="number"
       />
       <Input
-        label="Cost Price"
+        label="Precio de coste"
         placeholder="15"
         {...register('costPrice')}
         error={errors.costPrice?.message as string}
@@ -26,7 +26,7 @@ export default function ProductPricing() {
         type="number"
       />
       <Input
-        label="Retail Price"
+        label="Precio al por menor"
         placeholder="10"
         {...register('retailPrice')}
         error={errors.retailPrice?.message as string}
@@ -34,7 +34,7 @@ export default function ProductPricing() {
         type="number"
       />
       <Input
-        label="Sale Price"
+        label="Precio de venta"
         placeholder="20"
         {...register('salePrice')}
         error={errors.salePrice?.message as string}

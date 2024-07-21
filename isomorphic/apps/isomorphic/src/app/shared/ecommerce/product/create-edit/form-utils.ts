@@ -69,11 +69,11 @@ export const productData = {
   description: 'Mejora tu colección con la figura "S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue)" de Bandai.',
   sku: 'SKU-28935',
   type: 'Producto Digital',
-  categories: 'Dragon Ball / S.H.Figuarts',
-  price: 10,
-  costPrice: 20,
-  retailPrice: 15,
-  salePrice: 25,
+  categories: 'S.H.Figuarts',
+  price: 800,
+  costPrice: 600,
+  retailPrice: 750,
+  salePrice: 800,
   productImages: undefined,
   inventoryTracking: 'no',
   currentStock: '150',
@@ -81,12 +81,12 @@ export const productData = {
   productAvailability: 'online',
   tradeNumber: '12345',
   manufacturerNumber: '154',
-  brand: 'Foska',
+  brand: 'S.H.Figuarts',
   upcEan: 'Ean',
   customFields: [
     {
       label: 'Color',
-      value: 'Red',
+      value: 'Rojo',
     },
   ],
   freeShipping: false,
@@ -94,97 +94,109 @@ export const productData = {
   locationBasedShipping: true,
   locationShipping: [
     {
-      name: 'USA',
-      shippingCharge: '150',
+      name: 'MEX',
+      shippingCharge: '200',
     },
   ],
-  pageTitle: 'apple',
-  metaDescription: 'apple',
-  metaKeywords: 'grocery, foods',
+  pageTitle: 'S.H.Figuarts',
+  metaDescription: 'S.H.Figuarts',
+  metaKeywords: 'Dragon Ball, S.H.figuarts',
   productUrl: 'http://localhost:3000/',
   isPurchaseSpecifyDate: true,
   isLimitDate: true,
   dateFieldName: 'Date Field',
   productVariants: [
     {
-      name: 'Jhon',
-      value: '150',
+      name: 'Goku',
+      value: '800',
     },
   ],
-  tags: ['iPhone', 'mobile'],
+  tags: ['Figura', 'Dragon Ball'],
 };
 
 export const menuItems = [
   {
-    label: 'Summary',
-    value: 'summary',
+    label: 'Resumen',
+    value: 'Resumen',
   },
   {
-    label: 'Images & Gallery',
-    value: 'images_gallery',
+    label: 'Imagenes & Galeria',
+    value: 'Imagenes & Galeria',
   },
   {
-    label: 'Pricing & Inventory',
-    value: 'pricing_inventory',
+    label: 'Precio e Inventario',
+    value: 'Precio e Inventario',
   },
   {
-    label: 'Product Identifiers & Custom Fields',
-    value: 'product_identifiers',
+    label: 'Identificadores de productos y campos personalizados',
+    value: 'Identificadores de productos y campos personalizados',
   },
   {
-    label: 'Shipping & Availability',
-    value: 'shipping_availability',
+    label: 'Envío y disponibilidad',
+    value: 'Envío y disponibilidad',
   },
   {
     label: 'SEO',
-    value: 'seo',
+    value: 'SEO',
   },
   {
-    label: 'Variant Options',
-    value: 'variant_options',
+    label: 'Opciones variantes',
+    value: 'Opciones variantes',
   },
 ];
 
 // Category option
 export const categoryOption = [
   {
-    value: 'fruits',
-    label: 'Fruits',
+    value: 'Mini Figuarts',
+    label: 'Mini Figuarts',
   },
   {
-    value: 'grocery',
-    label: 'Grocery',
+    value: 'Myth Cloth',
+    label: 'Myth Cloth',
   },
   {
-    value: 'meat',
-    label: 'Meat',
+    value: 'Anime Heroes',
+    label: 'Anime Heroes',
   },
   {
-    value: 'cat food',
-    label: 'Cat Food',
+    value: 'Banpresto',
+    label: 'Banpresto',
+  },
+  {
+    value: 'Proplica',
+    label: 'Proplica',
+  },
+  {
+    value: 'S.H.Monstarts',
+    label: 'S.H.Monstarts',
+  },
+  {
+    value: 'S.H.Monstarts',
+    label: 'S.H.Monstarts',
   },
 ];
 
 // Type option
 export const typeOption = [
   {
-    value: 'digital product',
-    label: 'Digital Product',
+    value: 'Producto Digital',
+    label: 'Producto Digital',
   },
   {
-    value: 'physical product',
-    label: 'Physical Product',
+    value: 'Producto Físico',
+    label: 'Producto Físico',
   },
 ];
 
 // Variant option
 export const variantOption = [
   {
-    value: 'single',
-    label: 'Single',
+    value: 'Unico',
+    label: 'Unico',
   },
   {
-    value: 'multiple',
+    value: 'Multiple',
     label: 'Multiple',
   },
 ];

@@ -11,30 +11,30 @@ export default function ProductSeo({ className }: { className?: string }) {
 
   return (
     <FormGroup
-      title="Search Engine Optimization"
-      description="Add your product's seo info here"
+      title="Optimización de motores de búsqueda"
+      description="Añade aquí la información SEO de tu producto."
       className={cn(className)}
     >
       <Input
-        label="Page Title"
-        placeholder="page title"
+        label="Título de la página"
+        placeholder="Título de la página"
         {...register('pageTitle')}
         error={errors.pageTitle?.message as string}
       />
       <Input
-        label="Meta Keywords"
-        placeholder="meta keywords"
+        label="Palabras clave"
+        placeholder="Palabras clave"
         {...register('metaKeywords')}
         error={errors.metaKeywords?.message as string}
       />
       <Input
-        label="Meta Description"
-        placeholder="meta description"
+        label="Descripción"
+        placeholder="Descripción"
         {...register('metaDescription')}
         error={errors.metaDescription?.message as string}
       />
       <Input
-        label="Product URL"
+        label="Producto URL"
         type="url"
         placeholder="https://"
         {...register('productUrl')}

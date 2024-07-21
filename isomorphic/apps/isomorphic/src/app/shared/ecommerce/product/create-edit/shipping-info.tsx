@@ -28,8 +28,8 @@ export default function ShippingInfo({ className }: { className?: string }) {
 
   return (
     <FormGroup
-      title="Shipping"
-      description="Add your shipping info here"
+      title="Envío"
+      description="Añade tu información de envío aquí"
       className={cn(className)}
     >
       <Controller
@@ -37,7 +37,7 @@ export default function ShippingInfo({ className }: { className?: string }) {
         control={control}
         render={({ field: { value, onChange } }) => (
           <Switch
-            label="Free Shipping"
+            label="Envío gratis"
             className="col-span-full"
             value={value}
             checked={value}
