@@ -79,14 +79,6 @@ export const menuItems = [
         href: routes.eCommerce.categories,
       },
       {
-        name: 'Agregar categoría',
-        href: routes.eCommerce.createCategory,
-      },
-      {
-        name: 'Editar categoría',
-        href: routes.eCommerce.editCategory(DUMMY_ID),
-      },
-      {
         name: 'Órdenes de compra',
         href: routes.eCommerce.orders,
       },
@@ -116,37 +108,6 @@ export const menuItems = [
       {
         name: 'Chat',
         href: routes.support.inbox,
-      },
-    ],
-  },
-  {
-    name: 'Logística',
-    href: '#',
-    icon: <PiPackageDuotone />,
-    dropdownItems: [
-      {
-        name: 'Lista de Envíos',
-        href: routes.logistics.shipmentList,
-      },
-      {
-        name: 'Detalles de envíos',
-        href: routes.logistics.shipmentDetails(DUMMY_ID),
-      },
-      {
-        name: 'Agregar envío',
-        href: routes.logistics.createShipment,
-      },
-      {
-        name: 'Editar envío',
-        href: routes.logistics.editShipment(DUMMY_ID),
-      },
-      {
-        name: 'Customer Profile',
-        href: routes.logistics.customerProfile,
-      },
-      {
-        name: 'Seguimiento',
-        href: routes.logistics.tracking(DUMMY_ID),
       },
     ],
   },
