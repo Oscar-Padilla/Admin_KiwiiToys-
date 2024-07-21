@@ -9,18 +9,18 @@ export const metadata = {
 };
 
 const pageHeader = {
-  title: 'Support Templates',
+  title: 'Soporte de Plantillas',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
-      name: 'Home',
+      name: 'Inicio',
     },
     {
       href: routes.support.dashboard,
-      name: 'Support',
+      name: 'Soporte',
     },
     {
-      name: 'Templates',
+      name: 'Plantillas',
     },
   ],
 };

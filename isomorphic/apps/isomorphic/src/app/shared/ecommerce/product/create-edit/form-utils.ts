@@ -65,11 +65,11 @@ export function defaultValues(product?: CreateProductInput) {
 }
 
 export const productData = {
-  title: 'Apple',
-  description: 'Fresh Express Iceberg Garden Salad Blend',
+  title: 'S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue) [Bandai]',
+  description: 'Mejora tu colección con la figura "S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue)" de Bandai.',
   sku: 'SKU-28935',
-  type: 'Digital Product',
-  categories: 'Grocery',
+  type: 'Producto Digital',
+  categories: 'Dragon Ball / S.H.Figuarts',
   price: 10,
   costPrice: 20,
   retailPrice: 15,
@@ -77,7 +77,7 @@ export const productData = {
   productImages: undefined,
   inventoryTracking: 'no',
   currentStock: '150',
-  lowStock: '20',
+  lowStock: '2',
   productAvailability: 'online',
   tradeNumber: '12345',
   manufacturerNumber: '154',
