@@ -72,7 +72,7 @@ function DropdownMenu() {
     <div className="w-64 text-left rtl:text-right">
       <div className="flex items-center border-b border-gray-300 px-6 pb-5 pt-6">
         <Avatar
-          src="https://isomorphic-furyroad.s3.amazonaws.com/public/avatars/avatar-11.webp"
+          src="https://www.ecuavisa.com/binrepository/953x600/189c0/600d600/none/11705/OAVV/karely-ruiz-lanza-concurso-de-dinero_1435557_20240321101407.jpg"
           name="Alma Marcela Gozo"
         />
         <div className="ms-3">
