@@ -66,20 +66,6 @@ function ProfileMenuPopover({ children }: React.PropsWithChildren<{}>) {
   );
 }
 
-const menuItems = [
-  {
-    name: 'My Profile',
-    href: routes.profile,
-  },
-  {
-    name: 'Account Settings',
-    href: routes.forms.profileSettings,
-  },
-  {
-    name: 'Activity Log',
-    href: '#',
-  },
-];
 
 function DropdownMenu() {
   return (
@@ -87,25 +73,14 @@ function DropdownMenu() {
       <div className="flex items-center border-b border-gray-300 px-6 pb-5 pt-6">
         <Avatar
           src="https://isomorphic-furyroad.s3.amazonaws.com/public/avatars/avatar-11.webp"
-          name="Albert Flores"
+          name="Alma Marcela Gozo"
         />
         <div className="ms-3">
           <Title as="h6" className="font-semibold">
-            Albert Flores
+            Alma Marcela Gozo
           </Title>
-          <Text className="text-gray-600">flores@doe.io</Text>
+          <Text className="text-gray-600">al_mamar@gmail.com</Text>
         </div>
-      </div>
-      <div className="grid px-3.5 py-3.5 font-medium text-gray-700">
-        {menuItems.map((item) => (
-          <Link
-            key={item.name}
-            href={item.href}
-            className="group my-0.5 flex items-center rounded-md px-2.5 py-2 hover:bg-gray-100 focus:outline-none hover:dark:bg-gray-50/50"
-          >
-            {item.name}
-          </Link>
-        ))}
       </div>
       <div className="border-t border-gray-300 px-6 pb-6 pt-5">
         <Button
@@ -113,7 +88,7 @@ function DropdownMenu() {
           variant="text"
           onClick={() => signOut()}
         >
-          Sign Out
+          Cerrar sesión
         </Button>
       </div>
     </div>
