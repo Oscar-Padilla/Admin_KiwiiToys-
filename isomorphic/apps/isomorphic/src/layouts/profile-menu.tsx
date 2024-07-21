@@ -28,7 +28,7 @@ export default function ProfileMenu({
         >
           <Avatar
             src="https://isomorphic-furyroad.s3.amazonaws.com/public/avatars/avatar-11.webp"
-            name="John Doe"
+            name="Alma Marcela Gozo"
             className={cn('!h-9 w-9 sm:!h-10 sm:!w-10', avatarClassName)}
           />
           {!!username && (
