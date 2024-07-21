@@ -75,14 +75,6 @@ export const menuItems = [
         badge: '',
       },
       {
-        name: 'Agregar producto',
-        href: routes.eCommerce.createProduct,
-      },
-      {
-        name: 'Editar producto',
-        href: routes.eCommerce.ediProduct(DUMMY_ID),
-      },
-      {
         name: 'Categorias',
         href: routes.eCommerce.categories,
       },
