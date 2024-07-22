@@ -5,7 +5,7 @@ import BasicTableWidget from '@/app/shared/controlled-table/basic-table-widget';
 export default function StockReport({ className }: { className?: string }) {
   return (
     <BasicTableWidget
-      title={'Stock Report'}
+      title={'Reporte de Stock'}
       data={productsData}
       // @ts-ignore
       getColumns={getColumns}
@@ -13,7 +13,7 @@ export default function StockReport({ className }: { className?: string }) {
       enablePagination
       noGutter
       paginatorClassName="pe-0 lg:pe-2"
-      searchPlaceholder="Search product..."
+      searchPlaceholder="Buscar..."
       variant="modern"
       className={className}
     />
