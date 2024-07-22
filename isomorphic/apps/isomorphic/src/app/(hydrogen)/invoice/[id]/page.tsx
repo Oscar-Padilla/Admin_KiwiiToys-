@@ -35,7 +35,7 @@ export default function InvoiceDetailsPage() {
           <PrintButton />
           <Button className="w-full @lg:w-auto">
             <PiDownloadSimpleBold className="me-1.5 h-[17px] w-[17px]" />
-            Download
+            Descargar
           </Button>
         </div>
       </PageHeader>

@@ -135,11 +135,11 @@ const sortOptions = {
 const options = [
   {
     value: sortOptions.asc,
-    label: 'Oldest',
+    label: 'Más Viejo',
   },
   {
     value: sortOptions.desc,
-    label: 'Newest',
+    label: 'Más Reciente',
   },
 ];
 
@@ -233,7 +233,7 @@ export default function MessageList({ className }: InboxListProps) {
                 )}
                 onClick={handleOpen}
               >
-                Open
+                Abierto
               </button>
               <button
                 className={cn(
@@ -243,7 +243,7 @@ export default function MessageList({ className }: InboxListProps) {
                 )}
                 onClick={handleClosed}
               >
-                Closed
+                Cerrado
               </button>
             </div>
           </div>

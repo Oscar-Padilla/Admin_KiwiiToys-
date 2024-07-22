@@ -17,13 +17,8 @@ import { useCopyToClipboard } from '@hooks/use-copy-to-clipboard';
 import { DotSeparator } from '@/app/shared/support/inbox/message-details';
 import pdfIcon from '@public/pdf-icon.svg';
 
-const p1 = `asperiores nesciunt autem quod error hic laudantium iste perspiciatis officiis voluptatibus exercitationem facere atque sapiente fuga excepturi qui illum alias reiciendis exercitationem ad occaecati deserunt molestiae maxime ratione consequuntur mollitia quae tempore alias ea architecto dolore iusto eaque error odit`;
-const p2 = `maxime suscipit fuga ducimus perspiciatis nemo porro nihil eaque a ab molestias praesentium voluptatum dignissimos odit ea omnis dolores maxime aspernatur vitae incidunt corrupti laudantium deserunt nisi facere sapiente fugiat`;
-const p3 = `consequatur pariatur cupiditate sit ut velit est fugiat itaque sequi`;
-const p4 = `pariatur necessitatibus quia molestiae minus nisi cumque dicta nobis reprehenderit porro placeat aliquid consequatur maiores earum sapiente dolores aperiam asperiores aut rerum tenetur voluptatibus voluptas delectus tenetur quam quisquam possimus amet accusantium dolore eius repudiandae unde rem blanditiis quae voluptatem porro quaerat magnam voluptas repellat debitis culpa dolorum sed cupiditate`;
-const p5 = `quia ullam aut occaecati atque eos dolores numquam dignissimos voluptatem ratione ipsa provident cupiditate molestias repellat reiciendis reiciendis enim voluptatibus ipsum velit velit libero cum reiciendis mollitia eius a nam necessitatibus in quos mollitia at quis sunt dolor`;
-const p6 = `excepturi corrupti iure dolores quam inventore veritatis culpa modi saepe alias esse aperiam ipsam assumenda ex ex dolor pariatur debitis accusantium architecto omnis quae officia`;
-const p7 = `maiores nostrum omnis dolor debitis minima omnis corporis incidunt aperiam vel tenetur enim perspiciatis incidunt ex laborum ex facilis similique nam facilis nostrum magni voluptatum molestiae voluptate dignissimos saepe ratione consequatur at sequi quidem est quibusdam ducimus facere laborum sunt sapiente ex repudiandae eius rem similique cumque doloremque eius omnis pariatur laboriosam modi nihil odit voluptatum tempora ratione magnam quo inventore vitae numquam`;
+const p1 = `Las Figuras venian con varios problemas a la hora de articular`;
+
 
 export default function MessageBody() {
   const data = useAtomValue(dataAtom);
@@ -84,19 +79,14 @@ export default function MessageBody() {
               </Tooltip>
             </span>
             <DotSeparator className="hidden lg:block" />
-            <span>Open {getRelativeTime(message?.date as Date)}</span>
+            <span>Abierto el {getRelativeTime(message?.date as Date)}</span>
           </div>
         </div>
       </div>
 
       <div className="ml-10 mt-3 grid gap-2 leading-relaxed xl:ml-16 2xl:mt-4">
         <Text>{p1}</Text>
-        <Text>{p2}</Text>
-        <Text>{p3}</Text>
-        <Text>{p4}</Text>
-        <Text>{p5}</Text>
-        <Text>{p6}</Text>
-        <Text>{p7}</Text>
+        
         <Text>
           Regards, <br />
           {message?.firstName} {message?.lastName}, <br />
@@ -135,12 +125,12 @@ export default function MessageBody() {
                   </span>
                   <div className="mt-2 flex items-center gap-2">
                     <span className="flex items-center gap-2 text-gray-500 transition duration-300 hover:text-gray-900">
-                      <PiEye className="h-3.5 w-3.5" /> <button>Preview</button>
+                      <PiEye className="h-3.5 w-3.5" /> <button>Vista Previa</button>
                     </span>
                     <DotSeparator />
                     <div className="flex items-center gap-2 text-gray-500 transition duration-300 hover:text-gray-900">
                       <PiDownloadSimpleBold className="h-3.5 w-3.5" />{' '}
-                      <button>Download</button>
+                      <button>Descargar</button>
                     </div>
                   </div>
                 </div>

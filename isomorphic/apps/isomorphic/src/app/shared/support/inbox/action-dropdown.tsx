@@ -13,22 +13,22 @@ const actions = [
   {
     id: 1,
     icon: <PiCheckCircle className="h-4 w-4" />,
-    name: 'Close Conversation',
+    name: 'Cerrar',
   },
   {
     id: 2,
     icon: <PiTrashSimple className="h-4 w-4" />,
-    name: 'Move to trash',
+    name: 'Mover a la papelera',
   },
   {
     id: 3,
     icon: <PiProhibitInset className="h-4 w-4" />,
-    name: 'Block Sender',
+    name: 'Bloquear remitente',
   },
   {
     id: 4,
     icon: <PiWarningCircle className="h-4 w-4" />,
-    name: 'Mark as spam',
+    name: 'Marcar como spam',
   },
 ];
 

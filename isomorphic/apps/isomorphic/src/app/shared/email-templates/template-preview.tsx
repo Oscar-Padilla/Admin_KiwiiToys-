@@ -58,7 +58,7 @@ export default function TemplatePreview({
           </div>
           <Link href={preview} target="_blank" className="block">
             <Button as="span" size="lg" className="mx-auto w-full">
-              Preview
+              Vista Previa
             </Button>
           </Link>
           {/* <EmailForm template="accountConfirmation" /> */}

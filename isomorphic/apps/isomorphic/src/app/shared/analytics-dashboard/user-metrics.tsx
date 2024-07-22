@@ -20,7 +20,7 @@ import SimpleBar from '@ui/simplebar';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     newUser: 5000,
     user: 1600,
     sessions: 4000,
@@ -38,7 +38,7 @@ const data = [
     sessions: 8300,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     newUser: 5780,
     user: 3908,
     sessions: 6798,
@@ -62,7 +62,7 @@ const data = [
     sessions: 8500,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     newUser: 3780,
     user: 3908,
     sessions: 9908,
@@ -86,7 +86,7 @@ const data = [
     sessions: 4908,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     newUser: 7500,
     user: 3000,
     sessions: 9000,

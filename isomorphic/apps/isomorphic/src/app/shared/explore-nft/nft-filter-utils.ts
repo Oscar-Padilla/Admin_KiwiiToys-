@@ -25,12 +25,12 @@ export const filterOptions = [
   },
   {
     id: 4,
-    label: 'Newest',
+    label: 'Más Reciente',
     value: 'newest',
   },
   {
     id: 5,
-    label: 'Oldest',
+    label: 'Más Viejo',
     value: 'oldest',
   },
 ];

@@ -17,23 +17,23 @@ import { messages } from '@/data/support-inbox';
 export const supportNavItems = [
   {
     value: 'unassigned',
-    label: 'Unassigned',
-    count: 88,
+    label: 'No asignado',
+    count: 1,
   },
   {
     value: 'assigned-to-me',
-    label: 'Assigned to me',
-    count: 1515,
+    label: 'Asignado a mí',
+    count: 1,
   },
   {
     value: 'all-open',
-    label: 'All open',
-    count: 1603,
+    label: 'Todo abierto',
+    count: 1,
   },
   {
     value: 'chat',
     label: 'Chat',
-    count: 991,
+    count: 1,
   },
 ];
 
@@ -99,7 +99,7 @@ export function TabButton({
     const updatedItems = messages.filter((msg) => msg.category === item.value);
     setData(updatedItems);
 
-    setMessageId(data[0].id);
+   
 
     // set active tab
     return onClick();

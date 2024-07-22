@@ -41,7 +41,7 @@ export default function LogisticsListPage() {
           </Button>
           <Button className="w-full gap-2 @lg:w-auto">
             <PiDownloadSimpleBold className="h-4 w-4" />
-            Download
+            Descargar
           </Button>
         </div>
       </PageHeader>

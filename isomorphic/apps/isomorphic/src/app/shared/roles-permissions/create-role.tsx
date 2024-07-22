@@ -88,7 +88,7 @@ export default function CreateRole() {
                 >
                   <ActionIcon
                     variant="text"
-                    title="Click to Copy"
+                    title="Click para copiar"
                     onClick={() => handleCopyToClipboard(colorCode)}
                     className="-mr-3"
                   >
