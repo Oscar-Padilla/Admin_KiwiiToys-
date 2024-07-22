@@ -33,7 +33,7 @@ export default function AddressInfo({
       )}
 
       <Input
-        label="Customer Name"
+        label="Nombre del cliente"
         placeholder="Customer name"
         {...register(`${type}.customerName`)}
         // @ts-ignore
@@ -44,8 +44,8 @@ export default function AddressInfo({
         control={control}
         render={({ field: { value, onChange } }) => (
           <PhoneNumber
-            label="Phone Number"
-            country="us"
+            label="Número de teléfono"
+            country="mx"
             value={value}
             onChange={onChange}
             // @ts-ignore
@@ -54,35 +54,35 @@ export default function AddressInfo({
         )}
       />
       <Input
-        label="Country"
+        label="País"
         placeholder="Country"
         {...register(`${type}.country`)}
         // @ts-ignore
         error={errors?.[type]?.country?.message as string}
       />
       <Input
-        label="State"
+        label="Estado"
         placeholder="State"
         {...register(`${type}.state`)}
         // @ts-ignore
         error={errors?.[type]?.state?.message as string}
       />
       <Input
-        label="City"
+        label="Ciudad"
         placeholder="City"
         {...register(`${type}.city`)}
         // @ts-ignore
         error={errors?.[type]?.city?.message as string}
       />
       <Input
-        label="ZIP / Postcode"
+        label="Código Postal"
         placeholder="ZIP / postcode"
         {...register(`${type}.zip`)}
         // @ts-ignore
         error={errors?.[type]?.zip?.message as string}
       />
       <Input
-        label="Street Address"
+        label="Dirección"
         placeholder="Street Address"
         className="col-span-full"
         {...register(`${type}.street`)}

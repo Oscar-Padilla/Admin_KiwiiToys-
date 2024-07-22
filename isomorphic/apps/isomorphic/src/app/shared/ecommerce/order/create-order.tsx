@@ -74,7 +74,7 @@ export default function CreateOrder({
       console.log('createOrder data ->', data);
       router.push(routes.eCommerce.orderDetails(DUMMY_ID));
       toast.success(
-        <Text as="b">Order {id ? 'Updated' : 'placed'} successfully!</Text>
+        <Text as="b">Órden {id ? 'Actualizada' : 'puesta'} satisfactoriamente!</Text>
       );
     }, 600);
   };
@@ -97,7 +97,7 @@ export default function CreateOrder({
         <div className="items-start @5xl:grid @5xl:grid-cols-12 @5xl:gap-7 @6xl:grid-cols-10 @7xl:gap-10">
           <div className="flex-grow @5xl:col-span-8 @5xl:pb-10 @6xl:col-span-7">
             <div className="flex flex-col gap-4 @xs:gap-7 @5xl:gap-9">
-              <AddressInfo type="billingAddress" title="Billing Information" />
+              <AddressInfo type="billingAddress" title="Datos de compra" />
 
               <DifferentBillingAddress />
 
@@ -109,7 +109,6 @@ export default function CreateOrder({
 
           <div className="pb-7 pt-10 @container @5xl:col-span-4 @5xl:py-0 @6xl:col-span-3">
             <CustomerInfo />
-            <OrderSummery isLoading={isLoading} className="static" />
           </div>
         </div>
       </form>

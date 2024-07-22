@@ -40,7 +40,7 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
               <Image
                 fill
                 src={
-                  'https://isomorphic-furyroad.s3.amazonaws.com/public/avatar.png'
+                  '/logo/mencho.png'
                 }
                 alt="avatar"
                 sizes="(max-width: 768px) 100vw"
@@ -49,19 +49,19 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
             </div>
             <div className="ps-4 @5xl:ps-6">
               <Title as="h6" className="mb-2.5 font-semibold">
-                Leslie Alexander
+                José Alexis Silva Guerrero
               </Title>
               <Text as="p" className="mb-2 break-all last:mb-0">
-                nevaeh.simmons@example.com
+                axgro@gmail.com
               </Text>
               <Text as="p" className="mb-2 last:mb-0">
-                (316) 555-0116
+                (496) 118-9627
               </Text>
             </div>
           </div>
         </div>
         <div className="relative mb-7 border-b border-gray-300 py-7">
-          <Title as="h6">Order Details</Title>
+          <Title as="h6">Detalles de Órden</Title>
           <ActionIcon
             className="absolute end-0 top-5 z-10 text-gray-600 dark:text-gray-800"
             rounded="full"
@@ -74,7 +74,7 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
             as="p"
             className="mt-3 flex flex-col font-semibold text-gray-700"
           >
-            <span className="mb-2 font-normal">Order ID</span> COMP1502
+            <span className="mb-2 font-normal">ID</span> COMP1502
           </Text>
         </div>
         <div className="space-y-4 @lg:space-y-5 @2xl:space-y-6">
@@ -87,7 +87,7 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
                 options={paymentOptions}
                 value={value}
                 onChange={onChange}
-                label="Payment Method"
+                label="Método de Pago"
                 error={errors?.paymentMethod?.message as string}
                 getOptionValue={(option) => option.label}
               />
@@ -102,7 +102,7 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
                 options={shippingOption}
                 value={value}
                 onChange={onChange}
-                label="Shipping Method"
+                label="Método de Envío"
                 error={errors?.shippingMethod?.message as string}
                 getOptionValue={(option) => option.label}
               />
@@ -113,8 +113,8 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
             control={control}
             render={({ field: { value, onChange, onBlur } }) => (
               <DatePicker
-                inputProps={{ label: 'Order date' }}
-                placeholderText="Select Date"
+                inputProps={{ label: 'Fecha de Órden' }}
+                placeholderText="Seleccionar Fecha"
                 dateFormat="dd/MM/yyyy"
                 onChange={onChange}
                 onBlur={onBlur}

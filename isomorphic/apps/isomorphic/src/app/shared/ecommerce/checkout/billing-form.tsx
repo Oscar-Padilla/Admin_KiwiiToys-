@@ -6,7 +6,7 @@ export default function BillingForm({ register, errors, control }: any) {
   return (
     <>
       <Title as="h3" className="mb-3 font-semibold @2xl:mb-5">
-        Billing Information
+        Datos de compra
       </Title>
       <div className="grid grid-cols-1 gap-3 @sm:grid-cols-2 @lg:gap-4 @2xl:gap-5">
         <Input

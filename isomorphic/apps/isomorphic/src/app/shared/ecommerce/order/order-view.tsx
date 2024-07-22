@@ -18,11 +18,11 @@ import { formatDate } from '@utils/format-date';
 import usePrice from '@hooks/use-price';
 
 const orderStatus = [
-  { id: 1, label: 'Order Pending' },
-  { id: 2, label: 'Order Processing' },
-  { id: 3, label: 'Order At Local Facility' },
-  { id: 4, label: 'Order Out For Delivery' },
-  { id: 5, label: 'Order Completed' },
+  { id: 1, label: 'Órden Pendiente' },
+  { id: 2, label: 'Órden Procesada' },
+  { id: 3, label: 'Órden en tu área local' },
+  { id: 4, label: 'Órden en entrega' },
+  { id: 5, label: 'Órden Completada' },
 ];
 
 const transitions = [
@@ -110,13 +110,13 @@ export default function OrderView() {
           {formatDate(new Date(), 'h:mm A')}
         </span>
         <span className="my-2 border-r border-muted px-5 py-0.5 first:ps-0 last:border-r-0">
-          {totalItems} Items
+          {totalItems} Productos
         </span>
         <span className="my-2 border-r border-muted px-5 py-0.5 first:ps-0 last:border-r-0">
           Total {totalPrice}
         </span>
         <span className="my-2 ms-5 rounded-3xl border-r border-muted bg-green-lighter px-2.5 py-1 text-xs text-green-dark first:ps-0 last:border-r-0">
-          Paid
+          Pagado
         </span>
       </div>
       <div className="items-start pt-10 @5xl:grid @5xl:grid-cols-12 @5xl:gap-7 @6xl:grid-cols-10 @7xl:gap-10">
@@ -124,7 +124,7 @@ export default function OrderView() {
           {orderNote && (
             <div className="">
               <span className="mb-1.5 block text-sm font-medium text-gray-700">
-                Notes About Order
+                Notas sobre la órden
               </span>
               <div className="rounded-xl border border-muted px-5 py-3 text-sm leading-[1.85]">
                 {orderNote}
@@ -138,9 +138,6 @@ export default function OrderView() {
               <div className="ms-auto max-w-lg space-y-6">
                 <div className="flex justify-between font-medium">
                   Subtotal <span>{subtotal}</span>
-                </div>
-                <div className="flex justify-between font-medium">
-                  Store Credit <span>{toCurrency(0)}</span>
                 </div>
                 <div className="flex justify-between font-medium">
                   Subtotal <span>{toCurrency(0)}</span>
@@ -157,7 +154,7 @@ export default function OrderView() {
               as="h3"
               className="mb-3.5  text-base font-semibold @5xl:mb-5 @7xl:text-lg"
             >
-              Transactions
+              Transacciones
             </Title>
 
             <div className="space-y-4">
@@ -178,7 +175,7 @@ export default function OrderView() {
                     </div>
                     <div className="flex flex-col ps-4">
                       <Text as="span" className="font-lexend text-gray-700">
-                        Payment
+                        Pago
                       </Text>
                       <span className="pt-1 text-[13px] font-normal text-gray-500">
                         Via {item.paymentMethod.name}
@@ -200,16 +197,16 @@ export default function OrderView() {
             </div>
             <div className="space-y-6 rounded-xl border border-muted px-5 py-6 @5xl:space-y-7 @5xl:p-7">
               <div className="flex justify-between font-medium">
-                Total Order <span>$5275.00</span>
+                Total de la órden <span>$5275.00</span>
               </div>
               <div className="flex justify-between font-medium">
-                Total Return <span>$350.00</span>
+                Total Retorno <span>$350.00</span>
               </div>
               <div className="flex justify-between font-medium">
-                Paid By Customer <span>$3000.00</span>
+                Pagado por el cliente <span>$3000.00</span>
               </div>
               <div className="flex justify-between font-medium">
-                Refunded <span>$350.00</span>
+                Ganancias <span>$350.00</span>
               </div>
               <div className="flex justify-between font-medium">
                 Balance <span>$4975.00</span>
@@ -219,7 +216,7 @@ export default function OrderView() {
         </div>
         <div className="space-y-7 pt-8 @container @5xl:col-span-4 @5xl:space-y-10 @5xl:pt-0 @6xl:col-span-3">
           <WidgetCard
-            title="Order Status"
+            title="Estado de la Órden"
             childrenWrapperClass="py-5 @5xl:py-8 flex"
           >
             <div className="ms-2 w-full space-y-7 border-s-2 border-gray-100">
@@ -247,7 +244,7 @@ export default function OrderView() {
           </WidgetCard>
 
           <WidgetCard
-            title="Customer Details"
+            title="Detalles del Cliente"
             childrenWrapperClass="py-5 @5xl:py-8 flex"
           >
             <div className="relative aspect-square h-16 w-16 shrink-0 @5xl:h-20 @5xl:w-20">
@@ -256,7 +253,7 @@ export default function OrderView() {
                 alt="avatar"
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw"
-                src="https://isomorphic-furyroad.s3.amazonaws.com/public/avatar.png"
+                src="/logo/mencho.png"
               />
             </div>
             <div className="ps-4 @5xl:ps-6">
@@ -264,13 +261,13 @@ export default function OrderView() {
                 as="h3"
                 className="mb-2.5 text-base font-semibold @7xl:text-lg"
               >
-                Leslie Alexander
+                José Alexis Silva Guerrero
               </Title>
               <Text as="p" className="mb-2 break-all last:mb-0">
-                nevaeh.simmons@example.com
+              axgro@gmail.com
               </Text>
               <Text as="p" className="mb-2 last:mb-0">
-                (316) 555-0116
+              (496) 118-9627
               </Text>
             </div>
           </WidgetCard>

@@ -25,7 +25,7 @@ export default function DifferentBillingAddress({
           value={value}
           defaultChecked={value}
           onChange={onChange}
-          label="Shipping Address is the same as Billing Address"
+          label="La dirección de envío es la misma que la dirección de facturación."
         />
         // <RadioGroup
         //   value={value}

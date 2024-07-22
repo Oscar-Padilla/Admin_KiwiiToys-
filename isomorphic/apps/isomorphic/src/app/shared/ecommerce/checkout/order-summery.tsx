@@ -41,14 +41,14 @@ export default function OrderSummery({
       </Title>
       <div className="rounded-lg border border-muted p-4 @xs:p-6 @5xl:rounded-none @5xl:border-none @5xl:px-0">
         <div className="flex justify-between rounded-tl-lg rounded-tr-lg border-b border-muted pb-4 @xs:pb-6">
-          Ordered items
+          Productos órdenados
           <Link href={routes.eCommerce.cart}>
             <Button
               as="span"
               variant="text"
               className="h-auto w-auto p-0 text-primary underline hover:text-gray-1000"
             >
-              Edit Cart
+              Editar Carrito
             </Button>
           </Link>
         </div>
@@ -67,13 +67,13 @@ export default function OrderSummery({
             </Text>
           </div>
           <div className="mb-4 flex items-center justify-between last:mb-0">
-            Tax
+            Impuestos
             <Text as="span" className="font-medium text-gray-900">
               {toCurrency(0)}
             </Text>
           </div>
           <div className="mb-4 flex items-center justify-between last:mb-0">
-            Shipping
+            Envío
             <Text as="span" className="font-medium text-gray-900">
               {toCurrency(0)}
             </Text>
@@ -96,7 +96,7 @@ export default function OrderSummery({
               <Button
                 as="span"
                 className="mt-3 w-full text-base @md:h-12"
-              >{`Back to Store`}</Button>
+              >{`De regreso`}</Button>
             </Link>
           )}
         </div>

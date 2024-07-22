@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // TODO: Need added Order date default value
 
 const pageHeader = {
-  title: 'Edit Order',
+  title: 'Editar Órden',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
@@ -34,10 +34,10 @@ const pageHeader = {
     },
     {
       href: routes.eCommerce.orders,
-      name: 'Orders',
+      name: 'Órdenes',
     },
     {
-      name: 'Edit',
+      name: 'Editar',
     },
   ],
 };
@@ -51,7 +51,7 @@ export default function EditOrderPage({ params }: any) {
           className="mt-4 w-full @lg:mt-0 @lg:w-auto"
         >
           <Button as="span" className="w-full @lg:w-auto" variant="outline">
-            Cancel
+            Cancelar
           </Button>
         </Link>
       </PageHeader>

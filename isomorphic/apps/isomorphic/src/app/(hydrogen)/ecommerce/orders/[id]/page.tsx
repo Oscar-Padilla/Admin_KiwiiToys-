@@ -6,7 +6,7 @@ import OrderView from '@/app/shared/ecommerce/order/order-view';
 
 export default function OrderDetailsPage({ params }: any) {
   const pageHeader = {
-    title: `Order #${params.id}`,
+    title: `Órden #${params.id}`,
     breadcrumb: [
       {
         href: routes.eCommerce.dashboard,
@@ -14,7 +14,7 @@ export default function OrderDetailsPage({ params }: any) {
       },
       {
         href: routes.eCommerce.orders,
-        name: 'Orders',
+        name: 'Órdenes',
       },
       {
         name: params.id,
@@ -29,7 +29,7 @@ export default function OrderDetailsPage({ params }: any) {
           className="mt-4 w-full @lg:mt-0 @lg:w-auto"
         >
           <Button as="span" className="w-full @lg:w-auto ">
-            Edit Order
+            Editar Órden
           </Button>
         </Link>
       </PageHeader>

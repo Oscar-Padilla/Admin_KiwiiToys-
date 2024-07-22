@@ -47,7 +47,7 @@ export default function FilterElement({
       <PriceField
         value={filters['price']}
         onChange={(data) => updateFilter('price', data)}
-        label={'Price'}
+        label={'Precio'}
       />
       <DateFiled
         className="w-full"
@@ -57,10 +57,10 @@ export default function FilterElement({
         onChange={(date: any) => {
           updateFilter('createdAt', date);
         }}
-        placeholderText="Select created date"
+        placeholderText="Selecciona la fecha de creación"
         {...(isMediumScreen && {
           inputProps: {
-            label: 'Created Date',
+            label: 'Fecha de creación',
             labelClassName: 'font-medium text-gray-700',
           },
         })}
@@ -73,10 +73,10 @@ export default function FilterElement({
         onChange={(date: any) => {
           updateFilter('updatedAt', date);
         }}
-        placeholderText="Select modified date"
+        placeholderText="Selecciona la fecha de vencimiento"
         {...(isMediumScreen && {
           inputProps: {
-            label: 'Due Date',
+            label: 'Fecha de vencimiento',
             labelClassName: 'font-medium text-gray-700',
           },
         })}
@@ -106,7 +106,7 @@ export default function FilterElement({
           className="h-8 bg-gray-200/70"
           variant="flat"
         >
-          <PiTrashDuotone className="me-1.5 h-[17px] w-[17px]" /> Clear
+          <PiTrashDuotone className="me-1.5 h-[17px] w-[17px]" /> Borrar Filtros
         </Button>
       ) : null}
     </>
