@@ -22,13 +22,13 @@ export default function UserLocation({ className }: { className?: string }) {
   const [startDate, setStartDate] = useState<Date>(new Date());
   return (
     <WidgetCard
-      title={'User Location'}
+      title={'Locación de Usuario'}
       action={
         <DatePicker
           selected={startDate}
           onChange={(date: Date) => setStartDate(date)}
           dateFormat="MMM, yyyy"
-          placeholderText="Select Month"
+          placeholderText="Selecciona el Mes"
           showMonthYearPicker
           popperPlacement="bottom-end"
           inputProps={{

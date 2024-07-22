@@ -1,23 +1,23 @@
 export const orderData = [
   {
     id: '3413',
-    name: 'Dr. Ernest Fritsch-Shanahan',
-    email: 'August17@hotmail.com',
+    name: 'Krizz krozz',
+    email: 'Misericordia2009@gmail.com',
     avatar:
-      'https://isomorphic-furyroad.s3.amazonaws.com/public/avatars/avatar-15.webp',
-    items: 83,
-    price: '457.00',
-    status: 'Cancelled',
+      '/logo/Krizz.jpg',
+    items: 2,
+    price: '800',
+    status: 'Cancelado',
     createdAt: '2023-08-06T00:01:51.735Z',
     updatedAt: '2023-08-10T22:39:21.113Z',
     products: [
       {
         id: '0o02051402',
-        name: 'Tasty Metal Shirt',
-        category: 'Shoes',
+        name: 'S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue) [Bandai]',
+        category: 'S.H',
         image:
           'https://isomorphic-furyroad.s3.amazonaws.com/public/products/modern/7.webp',
-        price: '410.00',
+        price: '800',
         quantity: 2,
       },
       {

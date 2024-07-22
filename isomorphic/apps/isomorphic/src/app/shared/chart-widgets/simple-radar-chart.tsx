@@ -6,7 +6,7 @@ import cn from '@utils/class-names';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     A: 120,
     B: 110,
     totalSales: 230,

@@ -21,7 +21,7 @@ import { useTheme } from 'next-themes';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     newPatients: 570,
     returningPatients: 290,
   },
@@ -36,7 +36,7 @@ const data = [
     returningPatients: 400,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     newPatients: 520,
     returningPatients: 370,
   },
@@ -56,7 +56,7 @@ const data = [
     returningPatients: 580,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     newPatients: 720,
     returningPatients: 440,
   },
@@ -76,7 +76,7 @@ const data = [
     returningPatients: 320,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     newPatients: 610,
     returningPatients: 290,
   },
@@ -85,11 +85,11 @@ const data = [
 const viewOptions = [
   {
     value: 'Daily',
-    label: 'Daily',
+    label: 'Diariamente',
   },
   {
     value: 'Monthly',
-    label: 'Monthly',
+    label: 'Mensualmente',
   },
 ];
 

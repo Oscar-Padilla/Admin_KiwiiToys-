@@ -136,10 +136,7 @@ const paymentOptions = [
     value: 'paypal',
     label: 'PayPal',
   },
-  {
-    value: 'skrill',
-    label: 'Skrill',
-  },
+
   {
     value: 'visa',
     label: 'Visa',
@@ -154,11 +151,11 @@ const paymentOptions = [
 const shippingOption = [
   {
     value: 'ups',
-    label: 'UPS',
+    label: 'Correos de México',
   },
   {
     value: 'usps',
-    label: 'USPS',
+    label: 'DHL',
   },
   {
     value: 'fedex',

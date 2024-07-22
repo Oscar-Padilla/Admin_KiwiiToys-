@@ -83,7 +83,7 @@ export const menuItems = [
         href: routes.eCommerce.orders,
       },
       {
-        name: 'Reviews',
+        name: 'Reseñas',
         href: routes.eCommerce.reviews,
       },
     ],

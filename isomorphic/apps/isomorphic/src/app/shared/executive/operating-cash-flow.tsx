@@ -22,43 +22,43 @@ import TrendingUpIcon from '@components/icons/trending-up';
 
 const dailyData = [
   {
-    label: 'Mon',
+    label: 'Lun',
     income: 98,
     costOfSales: 80,
     expense: 18,
   },
   {
-    label: 'Tue',
+    label: 'Mar',
     income: 87,
     costOfSales: 49,
     expense: 16,
   },
   {
-    label: 'Thu',
+    label: 'Mier',
     income: 50,
     costOfSales: 86,
     expense: 32,
   },
   {
-    label: 'Wed',
+    label: 'Jueves',
     income: 45,
     costOfSales: 68,
     expense: 12,
   },
   {
-    label: 'Fri',
+    label: 'Vie',
     income: 25,
     costOfSales: 38,
     expense: 10,
   },
   {
-    label: 'Sat',
+    label: 'Sab',
     income: 80,
     costOfSales: 59,
     expense: 12,
   },
   {
-    label: 'Sun',
+    label: 'Dom',
     income: 87,
     costOfSales: 48,
     expense: 16,

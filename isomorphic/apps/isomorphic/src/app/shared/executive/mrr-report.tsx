@@ -46,7 +46,7 @@ const projects = [
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     totalSales: 95,
   },
   {

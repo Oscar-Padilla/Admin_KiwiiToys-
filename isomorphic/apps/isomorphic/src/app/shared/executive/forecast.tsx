@@ -22,7 +22,7 @@ import { formatNumber } from '@utils/format-number';
 
 const monthlyData = [
   {
-    key: 'Jan',
+    key: 'Ene',
     target: 2000,
     actual: 1000,
   },
@@ -37,7 +37,7 @@ const monthlyData = [
     actual: 5800,
   },
   {
-    key: 'Apr',
+    key: 'Abr',
     target: 5780,
     actual: 3908,
   },
@@ -57,7 +57,7 @@ const monthlyData = [
     actual: 6500,
   },
   {
-    key: 'Aug',
+    key: 'Ago',
     target: 3780,
     actual: 4908,
   },
@@ -77,7 +77,7 @@ const monthlyData = [
     actual: 3908,
   },
   {
-    key: 'Dec',
+    key: 'Dic',
     target: 7500,
     actual: 3000,
   },
@@ -85,37 +85,37 @@ const monthlyData = [
 
 const dailyData = [
   {
-    key: 'Sat',
+    key: 'Sab',
     target: 2000,
     actual: 1000,
   },
   {
-    key: 'Sun',
+    key: 'Dom',
     target: 4200,
     actual: 3700,
   },
   {
-    key: 'Mon',
+    key: 'Lun',
     target: 3000,
     actual: 5800,
   },
   {
-    key: 'Tue',
+    key: 'Mar',
     target: 5780,
     actual: 3908,
   },
   {
-    key: 'Wed',
+    key: 'Mie',
     target: 4080,
     actual: 2500,
   },
   {
-    key: 'Thu',
+    key: 'Jue',
     target: 2300,
     actual: 5200,
   },
   {
-    key: 'Fri',
+    key: 'Vie',
     target: 4890,
     actual: 6500,
   },
@@ -124,11 +124,11 @@ const dailyData = [
 const viewOptions = [
   {
     value: 'Daily',
-    label: 'Daily',
+    label: 'Dairiamente',
   },
   {
     value: 'Monthly',
-    label: 'Monthly',
+    label: 'Mensualmente',
   },
 ];
 

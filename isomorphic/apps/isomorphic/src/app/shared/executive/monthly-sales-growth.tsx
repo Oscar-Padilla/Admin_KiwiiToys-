@@ -21,7 +21,7 @@ import cn from '@utils/class-names';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     growthPercentage: 55,
   },
   {
@@ -33,7 +33,7 @@ const data = [
     growthPercentage: -30,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     growthPercentage: 37,
   },
   {
@@ -49,7 +49,7 @@ const data = [
     growthPercentage: -80,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     growthPercentage: 180,
   },
   {
@@ -65,7 +65,7 @@ const data = [
     growthPercentage: 436,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     growthPercentage: 335,
   },
 ];

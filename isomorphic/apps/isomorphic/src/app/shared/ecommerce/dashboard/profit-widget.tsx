@@ -16,7 +16,7 @@ import { PiInfoFill } from 'react-icons/pi';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     totalSales: 95,
   },
   {

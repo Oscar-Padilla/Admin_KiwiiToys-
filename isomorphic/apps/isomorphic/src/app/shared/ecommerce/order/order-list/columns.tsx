@@ -200,7 +200,7 @@ export const getWidgetColumns = ({
 }: Columns) => [
   {
     title: (
-      <HeaderCell title="Order ID" className="ps-4 [&>div]:whitespace-nowrap" />
+      <HeaderCell title="Orden ID" className="ps-4 [&>div]:whitespace-nowrap" />
     ),
     dataIndex: 'id',
     key: 'id',
@@ -215,7 +215,7 @@ export const getWidgetColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Customer" />,
+    title: <HeaderCell title="Cliente" />,
     dataIndex: 'customer',
     key: 'customer',
     width: 300,
@@ -228,7 +228,7 @@ export const getWidgetColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Items" />,
+    title: <HeaderCell title="Producto" />,
     dataIndex: 'items',
     key: 'items',
     width: 150,
@@ -239,7 +239,7 @@ export const getWidgetColumns = ({
   {
     title: (
       <HeaderCell
-        title="Price"
+        title="Presio"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'price'
@@ -257,7 +257,7 @@ export const getWidgetColumns = ({
   {
     title: (
       <HeaderCell
-        title="Created"
+        title="Creado"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'createdAt'
@@ -273,7 +273,7 @@ export const getWidgetColumns = ({
   {
     title: (
       <HeaderCell
-        title="Modified"
+        title="Modificado"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'updatedAt'
@@ -287,7 +287,7 @@ export const getWidgetColumns = ({
     render: (value: Date) => <DateCell date={value} />,
   },
   {
-    title: <HeaderCell title="Status" />,
+    title: <HeaderCell title="Estado" />,
     dataIndex: 'status',
     key: 'status',
     width: 140,

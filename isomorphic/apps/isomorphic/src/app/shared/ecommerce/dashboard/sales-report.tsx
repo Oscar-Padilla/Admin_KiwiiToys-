@@ -104,7 +104,7 @@ export default function SalesReport({ className }: { className?: string }) {
           selected={startDate}
           onChange={(date: Date) => setStartDate(date)}
           dateFormat="yyyy"
-          placeholderText="Select Year"
+          placeholderText="Seleccionar Año"
           showYearPicker
           inputProps={{ variant: 'text', inputClassName: 'p-0 px-1 h-auto' }}
           popperPlacement="bottom-end"

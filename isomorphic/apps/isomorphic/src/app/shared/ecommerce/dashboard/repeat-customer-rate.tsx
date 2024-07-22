@@ -19,7 +19,7 @@ import SimpleBar from '@ui/simplebar';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     newCustomer: 2000,
     oldCustomer: 1000,
   },
@@ -34,7 +34,7 @@ const data = [
     oldCustomer: 4000,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     newCustomer: 5780,
     oldCustomer: 3908,
   },
@@ -54,7 +54,7 @@ const data = [
     oldCustomer: 6500,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     newCustomer: 3780,
     oldCustomer: 4908,
   },
@@ -74,7 +74,7 @@ const data = [
     oldCustomer: 3908,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     newCustomer: 7500,
     oldCustomer: 3000,
   },
@@ -89,7 +89,7 @@ export default function RepeatCustomerRate({
   const [startDate, setStartDate] = useState<Date>(new Date());
   return (
     <WidgetCard
-      title={'Repeat Customer Rate'}
+      title={'Repetir Tarifa del Cliente'}
       description={
         <>
           <Badge renderAsDot className=" ms-1 bg-[#10b981]" /> New

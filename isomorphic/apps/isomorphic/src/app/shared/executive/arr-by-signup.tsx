@@ -20,7 +20,7 @@ import cn from '@utils/class-names';
 
 const data = [
   {
-    month: 'Jan',
+    month: 'Ene',
     sales: 1500,
     self: 1500,
   },
@@ -35,7 +35,7 @@ const data = [
     self: 1375,
   },
   {
-    month: 'Apr',
+    month: 'Abr',
     sales: 6798,
     self: 5780,
   },
@@ -55,7 +55,7 @@ const data = [
     self: 4890,
   },
   {
-    month: 'Aug',
+    month: 'Ago',
     sales: 9908,
     self: 2800,
   },
@@ -75,7 +75,7 @@ const data = [
     self: 1500,
   },
   {
-    month: 'Dec',
+    month: 'Dic',
     sales: 9000,
     self: 1700,
   },
