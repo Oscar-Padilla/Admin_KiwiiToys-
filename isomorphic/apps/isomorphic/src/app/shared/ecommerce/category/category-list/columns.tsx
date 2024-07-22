@@ -37,7 +37,7 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Image" />,
+    title: <HeaderCell title="Imagen" />,
     dataIndex: 'image',
     key: 'image',
     width: 100,
@@ -56,7 +56,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Category Name"
+        title="Categoría"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'name'
@@ -74,7 +74,7 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Description" />,
+    title: <HeaderCell title="Descripción" />,
     dataIndex: 'description',
     key: 'description',
     width: 250,
@@ -101,7 +101,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Products"
+        title="Productos"
         align="center"
         sortable
         ascending={
@@ -124,7 +124,7 @@ export const getColumns = ({
       <div className="flex items-center justify-end gap-3 pe-4">
         <Tooltip
           size="sm"
-          content={'Edit Category'}
+          content={'Editar Categoría'}
           placement="top"
           color="invert"
         >
@@ -135,8 +135,8 @@ export const getColumns = ({
           </Link>
         </Tooltip>
         <DeletePopover
-          title={`Delete the category`}
-          description={`Are you sure you want to delete this #${row.id} category?`}
+          title={`Borrar la categoría`}
+          description={`Estás seguro que quieres borrar esta categoría?`}
           onDelete={() => onDeleteItem(row.id)}
         />
       </div>

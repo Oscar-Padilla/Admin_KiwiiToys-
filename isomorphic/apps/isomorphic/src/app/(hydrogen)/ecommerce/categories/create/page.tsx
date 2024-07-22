@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 const pageHeader = {
-  title: 'Create A Category',
+  title: 'Agregar Categoría',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
@@ -18,10 +18,10 @@ const pageHeader = {
     },
     {
       href: routes.eCommerce.categories,
-      name: 'Categories',
+      name: 'Categorías',
     },
     {
-      name: 'Create',
+      name: 'Agregar',
     },
   ],
 };
@@ -35,7 +35,7 @@ export default function CreateCategoryPage() {
           className="mt-4 w-full @lg:mt-0 @lg:w-auto"
         >
           <Button as="span" className="w-full @lg:w-auto" variant="outline">
-            Cancel
+            Cancelar
           </Button>
         </Link>
       </PageHeader>

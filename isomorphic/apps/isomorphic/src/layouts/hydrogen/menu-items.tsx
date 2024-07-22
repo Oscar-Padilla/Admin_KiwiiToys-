@@ -75,7 +75,7 @@ export const menuItems = [
         badge: '',
       },
       {
-        name: 'Categorias',
+        name: 'Categorías',
         href: routes.eCommerce.categories,
       },
       {

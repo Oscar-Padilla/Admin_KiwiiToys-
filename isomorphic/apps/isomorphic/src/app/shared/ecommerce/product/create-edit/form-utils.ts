@@ -172,8 +172,8 @@ export const categoryOption = [
     label: 'S.H.Monstarts',
   },
   {
-    value: 'S.H.Monstarts',
-    label: 'S.H.Monstarts',
+    value: 'Model Kit',
+    label: 'Model Kit',
   },
 ];
 

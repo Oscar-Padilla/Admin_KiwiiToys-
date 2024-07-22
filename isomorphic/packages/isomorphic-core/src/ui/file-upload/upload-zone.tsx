@@ -140,7 +140,7 @@ export default function UploadZone({
         >
           <input {...getInputProps()} />
           <UploadIcon className="h-12 w-12" />
-          <Text className="text-base font-medium">Drop or select file</Text>
+          <Text className="text-base font-medium">Arrastra o selecciona un archivo</Text>
         </div>
 
         {!isEmpty(files) && !isEmpty(notUploadedItems) && (

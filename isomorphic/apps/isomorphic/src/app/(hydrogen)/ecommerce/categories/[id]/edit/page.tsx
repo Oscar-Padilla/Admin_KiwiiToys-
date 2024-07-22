@@ -23,28 +23,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const pageHeader = {
-  title: 'Edit Category',
+  title: 'Editar Categoría',
   breadcrumb: [
     {
       href: routes.eCommerce.dashboard,
-      name: 'Home',
+      name: 'E-Commerce',
     },
     {
       href: routes.eCommerce.categories,
-      name: 'Categories',
+      name: 'Categorías',
     },
     {
-      name: 'Edit',
+      name: 'Editar',
     },
   ],
 };
 
 const categoryData = {
-  name: 'Vegetables',
-  slug: 'vegetables',
-  type: 'Diet Foods',
-  parentCategory: 'Grocery',
-  description: 'Incredible Granite Ball',
+  name: 'Model Kit',
+  slug: 'modelkit',
+  type: 'Gundam',
+  parentCategory: 'Figura',
+  description: 'Mono genial',
   images: undefined,
 };
 
@@ -57,7 +57,7 @@ export default function EditCategoryPage({ params }: any) {
           className="mt-4 w-full @lg:mt-0 @lg:w-auto"
         >
           <Button as="span" className="w-full @lg:w-auto" variant="outline">
-            Cancel
+            Cancelar
           </Button>
         </Link>
       </PageHeader>

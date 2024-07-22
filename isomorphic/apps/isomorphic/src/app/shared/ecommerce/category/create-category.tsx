@@ -152,13 +152,13 @@ export default function CreateCategory({
               )}
             >
               <HorizontalFormBlockWrapper
-                title={'Add new category:'}
-                description={'Edit your category information from here'}
+                title={'Editar Categría:'}
+                description={'Aquí edita la información de la categoría'}
                 isModalView={isModalView}
               >
                 <Input
-                  label="Category Name"
-                  placeholder="category name"
+                  label="Nombre de la Categoría"
+                  placeholder="nombre de la categoría"
                   {...register('name')}
                   error={errors.name?.message}
                 />
@@ -177,7 +177,7 @@ export default function CreateCategory({
                       options={parentCategoryOption}
                       value={value}
                       onChange={onChange}
-                      label="Parent Category"
+                      label="Categoría Padre"
                       error={errors?.parentCategory?.message as string}
                       getOptionValue={(option) => option.label}
                     />
@@ -192,7 +192,7 @@ export default function CreateCategory({
                       options={typeOption}
                       value={value}
                       onChange={onChange}
-                      label="Display Type"
+                      label="Tipo"
                       error={errors?.type?.message as string}
                       getOptionValue={(option) => option.label}
                     />
@@ -207,7 +207,7 @@ export default function CreateCategory({
                       <QuillEditor
                         value={value}
                         onChange={onChange}
-                        label="Description"
+                        label="Descripción"
                         className="[&>.ql-container_.ql-editor]:min-h-[100px]"
                         labelClassName="font-medium text-gray-700 dark:text-gray-600 mb-1.5"
                       />
@@ -216,8 +216,8 @@ export default function CreateCategory({
                 </div>
               </HorizontalFormBlockWrapper>
               <HorizontalFormBlockWrapper
-                title="Upload new thumbnail image"
-                description="Upload your product image gallery here"
+                title="Sube una nueva foto de categoría"
+                description="Sube la foto de la categoría"
                 isModalView={isModalView}
               >
                 <UploadZone
@@ -237,14 +237,14 @@ export default function CreateCategory({
             )}
           >
             <Button variant="outline" className="w-full @xl:w-auto">
-              Save as Draft
+              Guardar como borrador
             </Button>
             <Button
               type="submit"
               isLoading={isLoading}
               className="w-full @xl:w-auto"
             >
-              {id ? 'Update' : 'Create'} Category
+              {id ? 'Actualizar' : 'Agregar'} Categoría
             </Button>
           </div>
         </>
