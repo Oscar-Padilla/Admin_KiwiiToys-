@@ -80,7 +80,7 @@ export const getColumns = ({
     render: (id: any) => <Text className="text-sm text-gray-500">RW-{id}</Text>,
   },
   {
-    title: <HeaderCell title="Customer Review" />,
+    title: <HeaderCell title="Reseña del  Cliente" />,
     dataIndex: 'customer',
     key: 'customer',
     width: 350,
@@ -89,7 +89,7 @@ export const getColumns = ({
         <Avatar name={customer.name} src={customer.avatar} />
         <div className="ms-3 pe-4">
           <Title as="h6" className="mb-1 !text-sm font-medium">
-            <span className="font-normal text-gray-500">By</span>{' '}
+            <span className="font-normal text-gray-500">Por</span>{' '}
             {customer.name}
           </Title>
           <Text className="leading-relaxed text-gray-500">{row.review}</Text>
@@ -100,7 +100,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Rating"
+        title="Valoración"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'rating'
@@ -119,7 +119,7 @@ export const getColumns = ({
     ),
   },
   {
-    title: <HeaderCell title="Product" />,
+    title: <HeaderCell title="Producto" />,
     dataIndex: 'product',
     key: 'product',
     width: 300,
@@ -147,7 +147,7 @@ export const getColumns = ({
   {
     title: (
       <HeaderCell
-        title="Created"
+        title="Creado"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'createdAt'
@@ -161,7 +161,7 @@ export const getColumns = ({
     render: (value: Date) => <DateCell date={value} />,
   },
   {
-    title: <HeaderCell title="Status" />,
+    title: <HeaderCell title="Estado" />,
     dataIndex: 'status',
     key: 'status',
     width: 120,
@@ -186,14 +186,14 @@ export const getColumns = ({
               className="flex w-full items-center justify-start px-4 py-2.5 focus:outline-none"
             >
               <PencilIcon className="me-2 h-[18px] w-[18px] text-gray-500" />
-              Edit
+              Editar
             </Button>
             <Button
               variant="text"
               className="flex w-full items-center justify-start px-4 py-2.5 focus:outline-none"
             >
               <PiXBold className="me-2 h-[18px] w-[18px] text-gray-500" />
-              Reject
+              Rechazado
             </Button>
             <Button
               variant="text"
@@ -201,7 +201,7 @@ export const getColumns = ({
               onClick={() => onDeleteItem(row.id)}
             >
               <TrashIcon className="me-2 h-[18px] w-[18px] text-gray-500" />
-              Delete
+              Borrar
             </Button>
           </div>
         </Popover.Content>

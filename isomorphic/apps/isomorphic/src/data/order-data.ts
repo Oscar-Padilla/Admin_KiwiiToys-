@@ -1,10 +1,10 @@
 export const orderData = [
   {
     id: '3413',
-    name: 'Krizz krozz',
-    email: 'Misericordia2009@gmail.com',
+    name: 'José Alexis Silva Guerrero',
+    email: 'axgro@gmail.com',
     avatar:
-      '/logo/Krizz.jpg',
+      '/logo/mencho.png',
     items: 2,
     price: '800',
     status: 'Cancelado',
@@ -13,29 +13,29 @@ export const orderData = [
     products: [
       {
         id: '0o02051402',
-        name: 'S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue) [Bandai]',
-        category: 'S.H',
+        name: 'S.H.FIGUARTS: One Piece - Monkey D. Luffy - Gear 5 Ver (Reissue) [Bandai Spirits]',
+        category: 'S.H.Figuarts',
         image:
-          'https://isomorphic-furyroad.s3.amazonaws.com/public/products/modern/7.webp',
+          '/logo/luffy.jpg',
         price: '800',
         quantity: 2,
       },
       {
         id: '0o17477064',
-        name: 'Modern Cotton Gloves',
-        category: 'Watch',
+        name: 'S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero Ver. (Reissue) [Bandai]',
+        category: 'S.H.Figuarts',
         image:
-          'https://isomorphic-furyroad.s3.amazonaws.com/public/products/modern/5.webp',
-        price: '342.00',
+          '/logo/goku.jpg',
+        price: '800',
         quantity: 3,
       },
       {
         id: '0o02374305',
-        name: 'Rustic Steel Computer',
-        category: 'Shoes',
+        name: 'S.H.FIGUARTS: Frieren: Beyond Journeys End Frieren [Bandai Spirits]',
+        category: 'S.H.Figuarts',
         image:
-          'https://isomorphic-furyroad.s3.amazonaws.com/public/products/modern/6.webp',
-        price: '948.00',
+          '/logo/frieren.jpg',
+        price: '900',
         quantity: 1,
       },
     ],

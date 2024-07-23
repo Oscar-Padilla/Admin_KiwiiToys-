@@ -11,7 +11,7 @@ export default function RecentAppList() {
       headerClassName="mb-3 lg:mb-4"
       action={
         <Button variant="outline" size="sm" className="text-sm">
-          View All
+          Ver Todo
         </Button>
       }
     >

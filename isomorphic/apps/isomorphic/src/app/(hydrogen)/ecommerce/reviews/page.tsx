@@ -35,10 +35,7 @@ export default function ReviewsPage() {
           href={routes.eCommerce.reviews}
           className="mt-4 w-full @lg:mt-0 @lg:w-auto"
         >
-          <Button as="span" className="w-full @lg:w-auto">
-            <PiPlusBold className="me-1.5 h-[17px] w-[17px]" />
-            Add Review
-          </Button>
+         
         </Link>
       </PageHeader>
       <ReviewsTable />

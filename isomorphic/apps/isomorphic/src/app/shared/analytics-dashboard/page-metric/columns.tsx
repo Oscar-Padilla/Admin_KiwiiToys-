@@ -58,7 +58,7 @@ export const getColumns = ({ sortConfig, onHeaderCellClick }: Columns) => [
   {
     title: (
       <HeaderCell
-        title="Pages"
+        title="Paginas"
         sortable
         ascending={
           sortConfig?.direction === 'asc' && sortConfig?.key === 'pages'

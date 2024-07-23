@@ -94,7 +94,7 @@ export default function QuickAccess({ className }: { className?: string }) {
           href={'/file-manager'}
           className="text-sm font-medium text-gray-900 hover:underline"
         >
-          View all
+         Ver Todo
         </Link>
       </div>
       <div className="relative">

@@ -4,7 +4,7 @@ import { Title, Text } from 'rizzui';
 
 export default function ExpandedOrderRow({ record }: any) {
   if (record?.products?.length === 0) {
-    return <Text>No product available</Text>;
+    return <Text>No Productos Disponibles</Text>;
   }
   return (
     <div className="grid grid-cols-1 divide-y bg-gray-0 px-3.5 dark:bg-gray-50">
@@ -28,7 +28,7 @@ export default function ExpandedOrderRow({ record }: any) {
               </Title>
               <Text className="mb-1 text-gray-500">{product.category}</Text>
               <Text className="text-xs text-gray-500">
-                Unit Price: ${product.price}
+                Precio por Unidad: ${product.price}
               </Text>
             </header>
           </div>

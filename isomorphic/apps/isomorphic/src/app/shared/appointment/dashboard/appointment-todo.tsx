@@ -128,7 +128,7 @@ export default function AppointmentTodo({ className }: { className?: string }) {
               className="bg-gray-0 text-gray-800 shadow-md transition-shadow hover:bg-gray-0 hover:shadow dark:hover:bg-gray-0"
               rounded="lg"
             >
-              View All
+              Ver Todo
             </Button>
           </div>
         </SimpleBar>

@@ -48,7 +48,7 @@ export default function BestSellers({ className }: { className?: string }) {
       }
       action={
         <Button variant="text" className="whitespace-nowrap underline">
-          View All
+         Ver Todo
         </Button>
       }
       descriptionClassName="mt-1 flex items-center [&_.react-datepicker-wrapper]:w-full [&_.react-datepicker-wrapper]:max-w-[228px] text-gray-500"

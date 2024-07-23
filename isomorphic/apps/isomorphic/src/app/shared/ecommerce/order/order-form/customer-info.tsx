@@ -25,7 +25,7 @@ export default function CustomerInfo({ className }: CustomerInfoProps) {
       <div className="rounded-xl border border-gray-300 p-5 @sm:p-6 @md:p-7">
         <div className="relative border-b border-gray-300 pb-7">
           <Title as="h6" className="mb-6">
-            Customer Info
+            Información del Cliente
           </Title>
           <ActionIcon
             className="absolute -top-1.5 end-0 z-10 text-gray-600 dark:text-gray-800"
