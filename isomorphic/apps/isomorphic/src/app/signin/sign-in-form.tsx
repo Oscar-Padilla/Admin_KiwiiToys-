@@ -55,19 +55,6 @@ export default function SignInForm() {
               {...register('password')}
               error={errors.password?.message}
             />
-            <div className="flex items-center justify-between pb-2">
-              <Checkbox
-                {...register('rememberMe')}
-                label="Recuérdame"
-                className="[&>label>span]:font-medium"
-              />
-              <Link
-                href={routes.auth.forgotPassword1}
-                className="h-auto p-0 text-sm font-semibold text-blue underline transition-colors hover:text-gray-900 hover:no-underline"
-              >
-                ¿Olvidaste tu contraseña?
-              </Link>
-            </div>
             <Button className="w-full" type="submit" size="lg">
               <span>Iniciar sesión</span>{' '}
               <PiArrowRightBold className="ms-2 mt-0.5 h-5 w-5" />
