@@ -25,9 +25,6 @@ jobs:
       - name: pnpm install
         run: |
           npm install -g pnpm
-      - name: pnpm install
-        run: |
-          pnpm install
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
